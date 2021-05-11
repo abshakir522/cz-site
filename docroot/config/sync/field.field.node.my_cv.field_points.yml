@@ -1,0 +1,23 @@
+uuid: 80e60d5b-0d55-44d9-bb96-758469bca053
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_points
+    - node.type.my_cv
+id: node.my_cv.field_points
+field_name: field_points
+entity_type: node
+bundle: my_cv
+label: Points
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

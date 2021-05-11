@@ -1,0 +1,22 @@
+uuid: 227ce681-c5d3-4849-80b2-dec822634ddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.my_cv
+id: node.my_cv.status
+field_name: status
+entity_type: node
+bundle: my_cv
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

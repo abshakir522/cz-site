@@ -1,0 +1,11 @@
+uuid: d20e30db-7491-4256-9b03-576f3eeaa64c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.my_cv
+id: node.my_cv
+target_entity_type_id: node
+target_bundle: my_cv
+default_langcode: site_default
+language_alterable: false

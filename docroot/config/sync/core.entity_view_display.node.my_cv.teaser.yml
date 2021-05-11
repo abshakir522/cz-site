@@ -1,0 +1,45 @@
+uuid: 5f345dd2-5ee4-42f2-a7e0-3fa487b1d934
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.my_cv.body
+    - field.field.node.my_cv.field_date_achieved
+    - field.field.node.my_cv.field_date_issued
+    - field.field.node.my_cv.field_document_upload
+    - field.field.node.my_cv.field_points
+    - field.field.node.my_cv.field_type
+    - field.field.node.my_cv.field_upload_evidence
+    - field.field.node.my_cv.field_valid_until
+    - node.type.my_cv
+  module:
+    - text
+    - user
+id: node.my_cv.teaser
+targetEntityType: node
+bundle: my_cv
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date_achieved: true
+  field_date_issued: true
+  field_document_upload: true
+  field_points: true
+  field_type: true
+  field_upload_evidence: true
+  field_valid_until: true
+  langcode: true

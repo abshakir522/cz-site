@@ -1,0 +1,20 @@
+uuid: e5161a05-7768-4428-b4d0-2f6e79de67c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_valid_until
+field_name: field_valid_until
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

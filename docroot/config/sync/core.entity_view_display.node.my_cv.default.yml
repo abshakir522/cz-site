@@ -1,0 +1,100 @@
+uuid: 3c5cee46-fb34-42cb-b75e-9c7ec994ad68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.my_cv.body
+    - field.field.node.my_cv.field_date_achieved
+    - field.field.node.my_cv.field_date_issued
+    - field.field.node.my_cv.field_document_upload
+    - field.field.node.my_cv.field_points
+    - field.field.node.my_cv.field_type
+    - field.field.node.my_cv.field_upload_evidence
+    - field.field.node.my_cv.field_valid_until
+    - node.type.my_cv
+  module:
+    - datetime
+    - file
+    - options
+    - text
+    - user
+id: node.my_cv.default
+targetEntityType: node
+bundle: my_cv
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_achieved:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_issued:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_document_upload:
+    weight: 106
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_points:
+    weight: 107
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_type:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_upload_evidence:
+    weight: 108
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_valid_until:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

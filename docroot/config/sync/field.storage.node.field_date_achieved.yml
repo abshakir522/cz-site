@@ -1,0 +1,20 @@
+uuid: 4a9a0bc2-36ac-4dfb-b44f-b644a5866a9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_date_achieved
+field_name: field_date_achieved
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

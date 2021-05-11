@@ -1,0 +1,21 @@
+uuid: de852023-0bac-48c7-9fb4-4da219ab4694
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_issued
+    - node.type.my_cv
+  module:
+    - datetime
+id: node.my_cv.field_date_issued
+field_name: field_date_issued
+entity_type: node
+bundle: my_cv
+label: 'Date Issued'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
