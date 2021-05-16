@@ -4,6 +4,7 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.user.full
+    - field.field.user.user.field_first_name
     - field.field.user.user.field_function
     - field.field.user.user.field_last_name
     - field.field.user.user.user_picture
@@ -47,4 +48,5 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_first_name: true
   langcode: true

@@ -1,0 +1,25 @@
+<?php
+/**
+* @file
+* A description of what your module does.
+*/
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function my_module_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//  kint($form);
+//  $form['account']['name']['#title'] = t('First and last name');
+//  $form['account']['name']['#description'] = t("Rewrite this about spaces, periods (.), hyphens (-) and apostrophes (').");
+  $form['account']['pass']['#type'] = 'password';
+  $form['account']['pass']['#title'] = 'Password';
+  $form['field_function']['#weight'] = 1;
+}
+//function my_module_preprocess_page(&$variables){
+//  $variables['page']['footer_fourt']['test']= array(
+//    '#type' => 'markup',
+//    '#markup' => '<div style="clear:both;">hello test</div>',
+//    );
+//  kint($variables['page']['footer_fourt']['test']);
+//}
+
