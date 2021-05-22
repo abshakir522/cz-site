@@ -1,0 +1,39 @@
+uuid: ff692e50-f061-44da-89e7-48493680cd8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_training_type
+field_name: field_training_type
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'At location'
+    -
+      value: 2
+      label: Webinar
+    -
+      value: 3
+      label: 'Not live'
+    -
+      value: 4
+      label: Live
+    -
+      value: 5
+      label: Partner
+    -
+      value: 6
+      label: 'Video training'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

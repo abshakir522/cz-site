@@ -1,0 +1,11 @@
+uuid: cd8c4ebe-3ddd-49bd-9f0a-6a1dbd9a1c4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.training_document
+id: media.training_document
+target_entity_type_id: media
+target_bundle: training_document
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: f4b5617a-d340-4ff7-b216-24f76fe99713
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_issued
+    - node.type.training
+  module:
+    - datetime
+id: node.training.field_date_issued
+field_name: field_date_issued
+entity_type: node
+bundle: training
+label: 'Creation date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
