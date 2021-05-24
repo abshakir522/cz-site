@@ -1,4 +1,5 @@
 label: 'Recente inhoud'
+description: 'Recente inhoud.'
 display:
   default:
     display_title: Hoofd

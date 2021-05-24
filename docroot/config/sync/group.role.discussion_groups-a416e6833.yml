@@ -1,0 +1,17 @@
+uuid: 78922b78-9ade-4bb9-a623-4fbc6409c8c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.discussion_groups
+  enforced:
+    config:
+      - user.role.administrator
+id: discussion_groups-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: discussion_groups
+permissions_ui: false
+permissions: {  }

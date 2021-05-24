@@ -1,0 +1,17 @@
+uuid: ab6e2b9d-eae8-452c-a791-b67ec378c774
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.training_course
+  enforced:
+    config:
+      - user.role.administrator
+id: training_course-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: training_course
+permissions_ui: false
+permissions: {  }

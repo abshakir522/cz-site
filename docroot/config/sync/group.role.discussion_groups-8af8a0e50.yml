@@ -1,0 +1,17 @@
+uuid: f181afac-dce5-4425-a8d4-73233b9bb590
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.discussion_groups
+  enforced:
+    config:
+      - user.role.content_admin
+id: discussion_groups-8af8a0e50
+label: 'Content Admin'
+weight: 4
+internal: true
+audience: outsider
+group_type: discussion_groups
+permissions_ui: false
+permissions: {  }

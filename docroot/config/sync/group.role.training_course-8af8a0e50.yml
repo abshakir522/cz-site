@@ -1,0 +1,17 @@
+uuid: 44aaf6bb-c5d1-4d7b-bbc9-263556f16254
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.training_course
+  enforced:
+    config:
+      - user.role.content_admin
+id: training_course-8af8a0e50
+label: 'Content Admin'
+weight: 4
+internal: true
+audience: outsider
+group_type: training_course
+permissions_ui: false
+permissions: {  }

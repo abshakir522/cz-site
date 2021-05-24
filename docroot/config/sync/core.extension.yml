@@ -18,10 +18,13 @@ module:
   dynamic_page_cache: 0
   editor: 0
   email_registration: 0
+  entity: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  gnode: 0
+  group: 0
   help: 0
   history: 0
   image: 0
@@ -45,10 +48,15 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
+  variationcache: 0
+  views_add_button: 0
+  views_add_button_group: 0
+  views_any_route: 0
   views_ui: 0
   forum: 1
   views: 10

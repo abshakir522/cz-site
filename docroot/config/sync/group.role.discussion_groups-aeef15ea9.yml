@@ -1,0 +1,17 @@
+uuid: f6d4610e-329e-49cd-a500-822f1c59c239
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.discussion_groups
+  enforced:
+    config:
+      - user.role.coach
+id: discussion_groups-aeef15ea9
+label: Coach
+weight: 3
+internal: true
+audience: outsider
+group_type: discussion_groups
+permissions_ui: false
+permissions: {  }

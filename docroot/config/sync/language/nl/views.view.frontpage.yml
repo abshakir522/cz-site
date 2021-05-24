@@ -1,7 +1,13 @@
 label: Voorpagina
+description: 'Alle inhoud die wordt aangeraden op de voorpagina.'
 display:
   default:
     display_options:
+      empty:
+        area_text_custom:
+          content: 'Er is nog geen inhoud gemaakt voor de voorpagina.<br />Volg de <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Gebruikershandleiding</a> om uw site te bouwen.'
+        title:
+          title: 'Welkom op [site:name]'
       exposed_form:
         options:
           submit_button: Toepassen

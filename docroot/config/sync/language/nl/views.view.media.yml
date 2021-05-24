@@ -1,4 +1,5 @@
 label: Media
+description: 'Media zoeken en beheren.'
 display:
   default:
     display_title: Hoofd
@@ -28,6 +29,7 @@ display:
           label: Miniatuur
           separator: ', '
         name:
+          label: Medianaam
           separator: ', '
         bundle:
           label: Type
@@ -47,6 +49,9 @@ display:
         operations:
           label: Bewerkingen
       filters:
+        name:
+          expose:
+            label: Medianaam
         bundle:
           expose:
             label: Type

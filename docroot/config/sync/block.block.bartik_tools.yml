@@ -1,6 +1,6 @@
 uuid: eaa36510-e0f3-41db-b590-8050ac6938f2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools

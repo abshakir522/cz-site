@@ -1,0 +1,14 @@
+uuid: 3959e76e-4fc6-4248-a386-e52478c6d6f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.discussion_groups
+id: discussion_groups-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: discussion_groups
+permissions_ui: true
+permissions: {  }

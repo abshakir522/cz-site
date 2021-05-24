@@ -1,0 +1,18 @@
+uuid: a335465e-54a0-44f9-b31d-c4889657764c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.discussion_groups
+id: group.discussion_groups.label
+field_name: label
+entity_type: group
+bundle: discussion_groups
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

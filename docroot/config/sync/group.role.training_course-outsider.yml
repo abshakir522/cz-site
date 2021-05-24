@@ -1,0 +1,18 @@
+uuid: 63704519-dd38-43c6-8760-32390e19260b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.training_course
+id: training_course-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: training_course
+permissions_ui: true
+permissions:
+  - 'join group'
+  - 'view group'
+  - 'view group_membership content'
+  - 'view group_node:training entity'

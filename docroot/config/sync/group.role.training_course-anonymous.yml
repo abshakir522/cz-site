@@ -1,0 +1,14 @@
+uuid: f2b19dd2-4778-4ea6-957a-b160d41212cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.training_course
+id: training_course-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: training_course
+permissions_ui: true
+permissions: {  }

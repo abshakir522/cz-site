@@ -1,4 +1,5 @@
 label: Bestanden
+description: 'Bestanden vinden en beheren.'
 display:
   default:
     display_title: Hoofd
@@ -55,6 +56,7 @@ display:
         area_text_custom:
           content: 'Geen bestanden beschikbaar.'
   page_1:
+    display_title: Bestandenoverzicht
     display_options:
       menu:
         title: Bestanden
@@ -84,3 +86,4 @@ display:
         fid:
           exception:
             title: Alle
+          title: 'Bestandsgebruikinformatie voor {{ arguments.fid }}'

@@ -43,6 +43,9 @@ display:
         mail:
           separator: ', '
       filters:
+        combine:
+          expose:
+            label: 'Naam of e-mail bevat'
         status:
           group_info:
             label: Status
