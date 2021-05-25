@@ -11,4 +11,5 @@ internal: true
 audience: member
 group_type: discussion_groups
 permissions_ui: true
-permissions: {  }
+permissions:
+  - 'view group_node:forum entity'

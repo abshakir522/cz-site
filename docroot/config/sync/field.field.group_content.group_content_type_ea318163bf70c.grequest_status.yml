@@ -1,0 +1,23 @@
+uuid: 7180bd0e-81d5-43c7-a9e9-412e3d82d9d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.grequest_status
+    - group.content_type.group_content_type_ea318163bf70c
+  module:
+    - state_machine
+id: group_content.group_content_type_ea318163bf70c.grequest_status
+field_name: grequest_status
+entity_type: group_content
+bundle: group_content_type_ea318163bf70c
+label: 'Request status'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  workflow: request
+  workflow_callback: ''
+field_type: state

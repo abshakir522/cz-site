@@ -24,6 +24,7 @@ module:
   file: 0
   filter: 0
   gnode: 0
+  grequest: 0
   group: 0
   help: 0
   history: 0
@@ -45,6 +46,7 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  state_machine: 0
   system: 0
   taxonomy: 0
   text: 0
