@@ -1,0 +1,60 @@
+{#
+/**
+ * @file
+ * Theme override to present all user data.
+ *
+ * This template is used when viewing a registered user's page,
+ * e.g., example.com/user/123. 123 being the user's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see template_preprocess_user()
+ */
+#}
+<article{{ attributes.addClass('profile cv') }}>
+  {% if content %}
+    {# {{- content -}} #}
+    <div class="row">
+        <div class="col-md-7 col-item">
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <th class="sub-title"> {{ content.field_first_name.0['#context']['value'] ~ ' ' ~ content.field_last_name.0['#context']['value'] }}</th>
+                <th class="sub-title"> MIJN PUNTEN</th>
+              </tr>
+              <tr class="text-muted">
+                <td>{{ content.field_function.0['#context']['value'] }}</td>
+                <td>{{ drupal_view('user_points_default_totals', 'block_1' ) }}</td>
+              </tr>
+
+              <tr>
+                <th class="sub-title">contact werk</th>
+              </tr>
+              <tr class="text-muted">
+                <td>{{ user.mail.0.value }}</td>	
+              </tr>
+              <tr class="text-muted">
+                <td>{{ user.field_phone.0.value }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title">mijn cv <a href="/form/my-cv" class="upload-link">upload</a></h1>
+          <i class="fa-arrow-up-from-square"></i>  <i class="fa-solid fa-user"></i>
+        </div>
+        {{ drupal_view('my_cv', 'block_1' ) }}
+         {{ drupal_view('my_cv', 'block_2' ) }}
+          {{ drupal_view('my_cv', 'block_3' ) }}
+        
+      </div>
+  {% endif %}
+</article>

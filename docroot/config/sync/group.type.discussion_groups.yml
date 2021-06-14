@@ -1,0 +1,10 @@
+uuid: 99921210-6486-4f13-a7e9-c89f9500e1a7
+langcode: en
+status: true
+dependencies: {  }
+id: discussion_groups
+label: 'Discussion Groups'
+description: ''
+creator_membership: true
+creator_wizard: false
+creator_roles: {  }

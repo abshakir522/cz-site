@@ -1,0 +1,17 @@
+uuid: 2a9e13c9-ad14-47f4-90fb-b65b36aea2dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.training_course
+  enforced:
+    config:
+      - user.role.coach
+id: training_course-aeef15ea9
+label: Coach
+weight: 3
+internal: true
+audience: outsider
+group_type: training_course
+permissions_ui: false
+permissions: {  }

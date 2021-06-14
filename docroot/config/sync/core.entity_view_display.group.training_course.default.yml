@@ -1,0 +1,34 @@
+uuid: 311b2b2d-8636-44b5-a982-bfe387651e39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.training_course.field_points
+    - group.type.training_course
+id: group.training_course.default
+targetEntityType: group
+bundle: training_course
+mode: default
+content:
+  field_points:
+    weight: -4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  langcode: true
+  uid: true

@@ -1,0 +1,23 @@
+uuid: 9f4d8db0-3e10-426a-a759-82d9545321d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_points
+    - group.type.discussion_groups
+id: group.discussion_groups.field_points
+field_name: field_points
+entity_type: group
+bundle: discussion_groups
+label: Points
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

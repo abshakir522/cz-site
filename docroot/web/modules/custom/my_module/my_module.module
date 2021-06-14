@@ -15,11 +15,4 @@ function my_module_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormS
   $form['account']['pass']['#title'] = 'Password';
   $form['field_function']['#weight'] = 1;
 }
-//function my_module_preprocess_page(&$variables){
-//  $variables['page']['footer_fourt']['test']= array(
-//    '#type' => 'markup',
-//    '#markup' => '<div style="clear:both;">hello test</div>',
-//    );
-//  kint($variables['page']['footer_fourt']['test']);
-//}
 

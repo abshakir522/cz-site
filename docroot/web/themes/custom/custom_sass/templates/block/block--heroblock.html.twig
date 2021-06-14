@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main content
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'form-hero',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <div{{ content_attributes.addClass('row') }}>
+    <div class="col-md-4 smry">
+    <div class="site-logo text-right"><img src="{{ logopath }}" alt="Comfortzorg logo"></div>
+      {{ content.body }}
+    </div>
+    <div class="col-md-8">
+     <div class="row form py-5">
+      <div class="col-sm-8 ml-auto mr-auto">
+          <ul class="nav nav-pills nav-fill mb-1" id="pills-tab" role="tablist">
+            <li class="nav-item"> <a class="nav-link active" id="pills-signin-tab" data-toggle="pill" href="#pills-signin" role="tab" aria-controls="pills-signin" aria-selected="true">Aanmelden</a> </li>
+                        <li class="nav-item"> <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false">Registeren</a> </li>
+          </ul>
+          <div class="tab-content my-5" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-signin" role="tabpanel" aria-labelledby="pills-signin-tab">
+              <div class="col-sm-12 rounded pt-2 px-0">
+                {{ content.field_login_form }}
+                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+              <div class="col-sm-12 rounded px-0">
+                {{ content.	field_registration_form }}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+    </div>
+  {% endblock %}
+</div>

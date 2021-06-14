@@ -1,0 +1,33 @@
+uuid: d21dd3fc-f712-4acf-8639-db478811dd1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.trainings
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__trainings_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:trainings-block_1'
+settings:
+  id: 'views_block:trainings-block_1'
+  label: Discussions
+  provider: views
+  label_display: visible
+  views_label: Discussions
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      forum: forum
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

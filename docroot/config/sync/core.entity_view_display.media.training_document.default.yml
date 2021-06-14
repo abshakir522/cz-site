@@ -1,0 +1,28 @@
+uuid: 1735e660-34ba-443f-951f-064714a4f105
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.training_document.field_media_file
+    - media.type.training_document
+  module:
+    - file
+id: media.training_document.default
+targetEntityType: media
+bundle: training_document
+mode: default
+content:
+  field_media_file:
+    label: visually_hidden
+    weight: 0
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

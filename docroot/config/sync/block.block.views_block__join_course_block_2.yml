@@ -1,0 +1,33 @@
+uuid: d18de65a-0279-4f4b-8746-283adcdf84df
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.join_course
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__join_course_block_2
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:join_course-block_2'
+settings:
+  id: 'views_block:join_course-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      forum: forum
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

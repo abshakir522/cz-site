@@ -1,0 +1,26 @@
+uuid: 8212083e-0d23-448d-8289-5be1d609c0ea
+langcode: en
+status: false
+dependencies:
+  module:
+    - my_module
+    - system
+  theme:
+    - custom_sass
+id: custom_sass_registraionform
+theme: custom_sass
+region: featured_top
+weight: 0
+provider: null
+plugin: reg_block
+settings:
+  id: reg_block
+  label: 'Registraion Form'
+  provider: my_module
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,17 @@
+uuid: 534b5ef2-1a62-4cf1-b94e-fd7e3cb36b32
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.discussion_groups
+id: discussion_groups-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: discussion_groups
+permissions_ui: true
+permissions:
+  - 'request group membership'
+  - 'view group'
+  - 'view group_node:forum entity'

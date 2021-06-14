@@ -1,0 +1,14 @@
+uuid: 02326323-f0ca-4b70-94ac-48c74871959b
+langcode: en
+status: true
+dependencies: {  }
+id: training_document
+label: 'Training Document'
+description: ''
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name

@@ -1,0 +1,17 @@
+uuid: a3c20106-9543-4832-b8b3-a6589fe706a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - transaction.type.userpoints_default_points
+  enforced:
+    module:
+      - userpoints_rules_example
+_core:
+  default_config_hash: Xyazi_tlUWyH4Z1r1Li4_v3iZqG7QN55GYeXo62nSfA
+id: userpoints_rules_earn_on_content_update
+label: 'Earn points for updating content'
+transaction_type: userpoints_default_points
+description: 'Content updating reward'
+details:
+  - 'Updates on: [transaction:field_userpoints_default_linkref]'

@@ -1,0 +1,343 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files 
+@import "import";
+:root {
+  --lightgray: #F5F5F5;
+  --brown: #665A1E;
+  --darkblue: #0F3362;
+  --lightblue: rgba(255,255,255,.6);
+  --redish: #FF4800;
+  --kingsblue: #93479A;
+  --primary: #0079C0;
+}
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+    background: $white;
+}
+
+
+/* COLORS 
+--------------------------------------------------*/
+
+a {
+    color: $accent-shade;
+}
+
+.bg-inverse {
+    background: $primary-shade !important;
+}
+
+.site-footer {
+    background: $accent-shade !important;
+}
+
+.menu--main li a {
+    color: $primary-shade;
+}
+
+.menu--account li a {
+    color: $primary-shade;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
+.slick {
+    width: 100%;
+}
+
+.slick>div {
+    margin: 0 15px;
+}
+
+/* CUSTOM STYLING
+-------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  body{
+    padding: 0 1rem;
+  }
+  
+  .navbar-main{
+    display: flex;
+    justify-content:space-between;
+    background: var(--lightgray);
+    padding: 1% 0;
+    border-radius: 0% 0 10px 10px;
+  }
+  .navbar-left{
+    width: 68%;
+  }
+  .navbar-right{
+    width: 30%;
+  }
+  .navbar-nav a{
+    color: var(--brown) !important;
+  }
+  .navbar-toggler{
+    border: none;
+  }
+  .navbar-toggler-bars{
+    width: 50%;
+    
+  }
+  .navbar-toggler .bar{
+    background: var(--brown);
+    width: 41px;
+    height: 7px;
+    margin: 5px;
+  }
+  .navbar-main .navbar-left-item{
+    position: absolute;
+    top: 85%;
+  }
+  
+  .navbar-main .navbar-right-item{
+    position: absolute;
+    top: 85%;
+    text-align: right;
+    right: 2%;
+  }
+  .navbar-toggler-circle{
+    background: var(--brown);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .navbar-toggler-circle img{
+    width: auto;
+    height: 100%;
+  }
+  .navbar-main .user-name{
+    color: var(--redish);
+    margin: auto 3% auto auto;
+  }
+  .navbar-brand{
+    font-size: xx-large;
+    font-weight: bold;
+    color: var(--brown) !important;
+  }
+  
+  .section-heading{
+    width: 70%;
+    margin: 5% auto 0 auto;
+    text-align: center;
+  }
+  
+  .heading{
+    font-weight: bold;
+    color: var(--redish);
+    font-size: 3.5rem;
+  }
+
+  /* HERO FORM */
+  .form-hero{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    .nav-pills {
+      justify-content: space-between;
+      .nav-item{
+        flex: 1 1 45%;
+        max-width: 45%;
+      }
+      .nav-link {
+        color: var(--brown);
+        background-color: var(--lightgray);
+        font-weight: bold;
+        opacity: .7;
+        width: 100%;
+        transition: width .2s;
+      }
+      .nav-link:hover{
+        background-color: var(--primary);
+        width: 101%;
+        color: white;
+        opacity: 1;
+      }
+    }
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+      opacity: 1;
+    }
+    fieldset label,  #block-userlogin .item-list, .description{
+      display: none;
+    }
+    button{
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 150px;
+      background-color: var(--brown) !important;
+      color: var(--lightgray !important);
+      border: unset !important;
+      font-weight: bold;
+      transition: all .1s;
+    }
+    button:hover{
+      background-color: var(--primary) !important;
+      width: 155px;
+      color: white;
+      opacity: 1;
+    }
+   .site-logo {
+     margin-bottom: 60px;
+    img{
+      max-width: 250px;
+      height: auto;
+    }
+   }
+   .hero-title{
+     color: var(--redish);
+     font-weight: 600;
+     font-size: 3.5rem;
+     margin-bottom: 20px;
+   }
+   .hero-link{
+     span{
+       color: var(--kingsblue); 
+       font-size: 1.5rem;
+       font-weight: bold;
+     }
+   }
+  }
+  @media screen and (min-width: 600px) {
+    .form-hero{
+      div.form{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        background-image: url(../images/form-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      div#edit-field-first-name-wrapper {
+        width: 45%;
+        display: inline-block;
+        margin-bottom: 0 !important;
+    }
+      #edit-field-last-name-wrapper{
+        width: 45%;
+        float: right;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .form-hero{
+      .smry{
+        padding-left: 3rem;
+      }
+    }
+  }
+  /*******************/
+  .cards{
+    display: flex;
+    justify-content: center;
+  }
+  .cards {
+    .card{
+      background: var(--darkblue);
+      margin: 1rem;
+      color: var(--lightgray);
+      padding: 8% 1% 1% 1%;
+      border-radius: 20px;
+      text-align: bottom;
+      
+    }
+    .card-circle{
+      border-radius: 50%;
+      padding: 10% 0;
+      text-align: center;
+     }
+     .card-head{
+       font-weight: 600;
+       a{
+        color: var(--lightgray) !important;
+        text-decoration: none;
+       }
+     }
+    .text-light-blue{
+      color: var(--lightblue);
+      
+    }
+  }
+  .h2{
+    a{
+      color: var(--lightgray) !important;
+    }
+  }
+  .cv{
+    padding: 3%;
+  }
+  .cv .sub-title{
+    color: var(--kingsblue);
+    text-transform: uppercase;
+    font-weight: bold;
+  
+  }
+  .cv .title{
+    color: var(--kingsblue);
+    font-weight: bold;
+  }
+  .cv .col-item{
+    margin: 2%;
+  }
+  .cv  .table2 td{
+    padding-left: 2rem;
+  }
+  .cv th{
+    padding-top: 3rem;
+  }
+  .cv .list-item{
+    list-style: none;
+    // background: rgba(red, green, blue, .5);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    .cards .card{
+      padding: 12% 2% 2% 2%;
+    }
+    .cards .card-circle {
+      padding: 15% 0;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .cards .card{
+      padding: 15% 4% 4% 4%;
+    }
+  .cards .card-circle {
+      padding: 30% 0;
+    }
+  }

@@ -1,0 +1,38 @@
+uuid: 8afc4831-96b7-4067-8f4a-f5b7b324521c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.library.body
+    - field.field.node.library.field_trainer
+    - node.type.library
+  module:
+    - text
+    - user
+id: node.library.default
+targetEntityType: node
+bundle: library
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_trainer:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

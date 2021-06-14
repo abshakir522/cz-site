@@ -1,0 +1,19 @@
+uuid: 3a47add6-a8f9-4342-ac98-e4b499011e1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - block_field
+id: block_content.field_registration_form
+field_name: field_registration_form
+entity_type: block_content
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

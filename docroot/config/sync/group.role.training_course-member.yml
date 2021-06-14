@@ -1,0 +1,16 @@
+uuid: 6820bace-3c2e-4f87-be11-5e1ad9564839
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.training_course
+id: training_course-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: training_course
+permissions_ui: true
+permissions:
+  - 'view group'
+  - 'view group_node:training entity'

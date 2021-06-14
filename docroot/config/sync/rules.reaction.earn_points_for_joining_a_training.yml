@@ -1,0 +1,77 @@
+uuid: 33c03275-7c36-434d-9a18-a0785945022e
+langcode: en
+status: true
+dependencies: {  }
+id: earn_points_for_joining_a_training
+label: 'Earn points for joining a Training'
+events:
+  -
+    event_name: 'rules_entity_insert:group_content--training_course-group_membership'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: ecc76ad7-c016-4308-8fc5-661c33cf5d41
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: d4f3d063-ae74-4bfc-a94b-6ec04655c068
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 5598cfcf-cbcc-4b85-9226-a33227a0b2ed
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 67fd381c-616c-4d73-a63a-e0018f9adf73
+        weight: 0
+        context_values:
+          type: user
+        context_mapping:
+          entity_id: group_content.entity_id.target_id
+        context_processors:
+          type:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_entity_fetch_by_id
+      -
+        id: rules_action
+        uuid: cfcd37b1-025b-4c59-93b3-ffb8fafc76dd
+        weight: 0
+        context_values:
+          transaction_type_id: userpoints_default_points
+          operation_id: ''
+          transaction_field_amount: '{{ @group.group_route_context:group.field_points.value }}'
+          transaction_field_balance: '0'
+          transaction_field_log_message: ''
+        context_mapping:
+          target_entity: entity_fetched
+        context_processors:
+          transaction_type_id:
+            rules_tokens: {  }
+          operation_id:
+            rules_tokens: {  }
+          transaction_field_amount:
+            rules_tokens: {  }
+          transaction_field_balance:
+            rules_tokens: {  }
+          transaction_field_log_message:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: 'transaction_create:userpoints'
+      -
+        id: rules_action
+        uuid: 8e74a71c-35d4-47f1-b9eb-400dac591fdc
+        weight: 0
+        context_values:
+          immediate: ''
+        context_mapping:
+          transaction: transaction
+        context_processors:
+          immediate:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: transaction_execute

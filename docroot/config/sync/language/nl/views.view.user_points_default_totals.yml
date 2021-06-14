@@ -1,0 +1,105 @@
+display:
+  default:
+    display_title: Hoofd
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Eerste'
+            last: 'Laatste »'
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      fields:
+        id:
+          label: ID
+          separator: ', '
+        created:
+          label: 'Aangemaakt op'
+          separator: ', '
+  page_userpoints_default_pendinguserpointstab:
+    display_options:
+      arguments:
+        target_entity__target_id:
+          exception:
+            title: Alle
+      fields:
+        created_1:
+          label: Datum
+          separator: ', '
+        description:
+          label: Beschrijving
+          separator: ', '
+        details:
+          separator: ', '
+        field_userpoints_default_amount:
+          label: Punten
+          separator: ', '
+        operations:
+          label: Bewerkingen
+  page_userpoints_default_totals:
+    display_title: Totalen
+    display_options:
+      fields:
+        target_entity__target_id:
+          label: Gebruiker
+          separator: ', '
+        field_userpoints_default_points:
+          label: Punten
+          separator: ', '
+      title: Totalen
+  page_userpoints_default_transactions:
+    display_title: Transacties
+    display_options:
+      title: Transacties
+      fields:
+        target_entity__target_id:
+          label: Gebruiker
+          separator: ', '
+        field_userpoints_default_amount:
+          label: Punten
+          separator: ', '
+        created:
+          label: Datum
+          separator: ', '
+        field_userpoints_default_reason:
+          label: Reden
+          separator: ', '
+        result_message:
+          label: Status
+          separator: ', '
+        operations_1:
+          label: Bewerkingen
+  page_userpoints_default_userpointstab:
+    display_options:
+      arguments:
+        target_entity__target_id:
+          exception:
+            title: Alle
+      fields:
+        executed_1:
+          label: Datum
+          separator: ', '
+        description:
+          label: Beschrijving
+          separator: ', '
+        details:
+          separator: ', '
+        field_userpoints_default_amount:
+          label: Punten
+          separator: ', '
+        field_userpoints_default_balance:
+          label: Balans
+          separator: ', '
+        operations:
+          label: Bewerkingen

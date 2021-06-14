@@ -1,0 +1,33 @@
+uuid: e18fa458-2080-479d-bcb4-e76eadd48b27
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.join_course
+  module:
+    - node
+    - views
+  theme:
+    - custom_sass
+id: custom_sass_views_block__join_course_block_2
+theme: custom_sass
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:join_course-block_2'
+settings:
+  id: 'views_block:join_course-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      forum: forum
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

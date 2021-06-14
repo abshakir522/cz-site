@@ -1,0 +1,21 @@
+uuid: e23b4f93-2352-4f9f-bb06-272ee33f9169
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_achieved
+    - node.type.training
+  module:
+    - datetime
+id: node.training.field_date_achieved
+field_name: field_date_achieved
+entity_type: node
+bundle: training
+label: 'Training Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

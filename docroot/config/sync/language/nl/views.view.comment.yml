@@ -1,4 +1,5 @@
 label: Reacties
+description: 'Zoek en beheer reacties.'
 display:
   default:
     display_title: Hoofd
@@ -62,11 +63,15 @@ display:
     display_options:
       menu:
         title: Reacties
+        description: 'Reacties gepubliceerd.'
+      display_description: 'Lijst met goedgekeurde reacties.'
   page_unapproved:
     display_title: 'Niet-goedgekeurde reacties'
     display_options:
       menu:
         title: 'Niet-goedgekeurde reacties'
+        description: 'Reacties afgekeurd'
+      display_description: 'Lijst met afgekeurde reacties.'
       filters:
         subject:
           expose:

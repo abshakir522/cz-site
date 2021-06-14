@@ -1,0 +1,20 @@
+uuid: 8c7a7372-5137-4348-ac0b-375e2eaa9f6f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - custom_sass
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: custom_sass_local_actions
+theme: custom_sass
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

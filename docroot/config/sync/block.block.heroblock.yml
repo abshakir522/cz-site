@@ -1,0 +1,31 @@
+uuid: a2e4923d-37cf-4e53-a6b3-d5f4bb9a4c47
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_block:da1a05b1-bc60-4720-a745-3de2bfd91b2d'
+  module:
+    - block_content
+    - system
+  theme:
+    - custom_sass
+id: heroblock
+theme: custom_sass
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:da1a05b1-bc60-4720-a745-3de2bfd91b2d'
+settings:
+  id: 'block_content:da1a05b1-bc60-4720-a745-3de2bfd91b2d'
+  label: 'Hero Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

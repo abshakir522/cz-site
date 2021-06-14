@@ -1,0 +1,17 @@
+uuid: bab2b450-9f76-4fa5-8e89-f8cc449a4eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - transaction.type.userpoints_default_points
+  enforced:
+    module:
+      - userpoints_rules_example
+_core:
+  default_config_hash: WtkO7lM-yVMZbmLaIVnnEP9DC9-AA-6SoweRG8PeMGo
+id: userpoints_rules_earn_on_comment_post
+label: 'Earn points for posting a comment'
+transaction_type: userpoints_default_points
+description: 'New comment reward'
+details:
+  - 'Your comment: [transaction:field_userpoints_default_linkref] at [transaction:field_userpoints_default_linkref:entity:entity]'

@@ -1,4 +1,5 @@
 label: 'Aangepaste blokken-bibliotheek'
+description: 'Aangepaste blokken zoeken en beheren'
 display:
   default:
     display_title: Hoofd
@@ -38,6 +39,9 @@ display:
           expose:
             label: 'Blok type'
       title: 'Aangepaste blokken-bibliotheek'
+      empty:
+        area_text_custom:
+          content: 'Er zijn geen aangepaste blokken beschikbaar.'
   page_1:
     display_title: Pagina
     display_options:

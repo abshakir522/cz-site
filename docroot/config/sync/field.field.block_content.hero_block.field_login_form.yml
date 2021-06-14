@@ -1,0 +1,27 @@
+uuid: df48f4f9-0995-4d1f-a230-d8da4d68b76d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_block
+    - field.storage.block_content.field_login_form
+  module:
+    - block_field
+id: block_content.hero_block.field_login_form
+field_name: field_login_form
+entity_type: block_content
+bundle: hero_block
+label: 'Login Form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: user_login_block
+    settings: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

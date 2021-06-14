@@ -1,0 +1,27 @@
+uuid: a62d525e-7a52-492d-96ec-0a434d8374f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_block
+    - field.storage.block_content.field_registration_form
+  module:
+    - block_field
+id: block_content.hero_block.field_registration_form
+field_name: field_registration_form
+entity_type: block_content
+bundle: hero_block
+label: 'Registration Form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: reg_block
+    settings: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

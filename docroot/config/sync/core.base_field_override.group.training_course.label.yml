@@ -1,0 +1,18 @@
+uuid: 1e57d93b-f5a6-4897-a55a-66ce6360f969
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.training_course
+id: group.training_course.label
+field_name: label
+entity_type: group
+bundle: training_course
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: ef78b1ee-9acb-4669-8746-4684655c023e
+langcode: en
+status: true
+dependencies: {  }
+id: content_admin
+label: 'Content Admin'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access group overview'
+  - 'access toolbar'
+  - 'administer group'
+  - 'bypass group access'
+  - 'create discussion_groups group'
+  - 'create training_course group'
+  - 'view own unpublished content'
+  - 'view the administration theme'

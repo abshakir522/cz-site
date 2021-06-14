@@ -1,0 +1,121 @@
+uuid: 3329888e-5ea2-46f7-bed2-a7b69bd36954
+langcode: en
+status: false
+dependencies: {  }
+id: earn_points_from_uploading_cv_documents
+label: 'Earn points from uploading CV documents'
+events:
+  -
+    event_name: 'rules_entity_insert:node--my_cv'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 5137f2b8-cf39-4f62-bb4e-6570e8d2ce5c
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: d81c00d1-50c1-467a-a9b1-0e7dc6f5c0fa
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 8f298cd0-59ec-4b21-9d26-d7f51c3d63df
+        weight: 0
+        context_values:
+          type: content
+          bundle: my_cv
+        context_mapping:
+          entity: node
+        context_processors:
+          type:
+            rules_tokens: {  }
+          bundle:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        condition_id: rules_entity_is_of_bundle
+        negate: false
+  actions:
+    id: rules_action_set
+    uuid: 55bd96d1-79c2-4a92-8302-c535930524ae
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 92de6554-799b-4a44-a84c-484b12e6bc4b
+        weight: -50
+        context_values:
+          type: user
+        context_mapping:
+          entity_id: node.uid.target_id
+        context_processors:
+          type:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_entity_fetch_by_id
+      -
+        id: rules_action
+        uuid: ddc499c1-776f-4b7f-9395-5e2077758570
+        weight: -49
+        context_values:
+          target_type: string
+          rounding_behavior: ''
+        context_mapping:
+          value: node.field_points.value
+        context_processors:
+          target_type:
+            rules_tokens: {  }
+          rounding_behavior:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_data_convert
+      -
+        id: rules_action
+        uuid: 6a1e335e-5e2a-49ab-9f7e-739cb7ab662f
+        weight: -48
+        context_values:
+          transaction_type_id: userpoints_default_points
+          operation_id: ''
+          transaction_field_amount: '12'
+          transaction_field_balance: '0'
+          transaction_field_log_message: ''
+        context_mapping:
+          target_entity: entity_fetched
+        context_processors:
+          transaction_type_id:
+            rules_tokens: {  }
+          operation_id:
+            rules_tokens: {  }
+          transaction_field_amount:
+            rules_tokens: {  }
+          transaction_field_balance:
+            rules_tokens: {  }
+          transaction_field_log_message:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: 'transaction_create:userpoints'
+      -
+        id: rules_action
+        uuid: bdde21fb-a13b-41c6-afd0-5932ca5d73fc
+        weight: -47
+        context_values: {  }
+        context_mapping:
+          data: transaction.field_userpoints_default_linkref
+          value: node
+        context_processors: {  }
+        provides_mapping: {  }
+        action_id: rules_data_set
+      -
+        id: rules_action
+        uuid: ff21d633-8593-4b95-94ea-ad7eb7ed1cca
+        weight: -46
+        context_values:
+          immediate: ''
+        context_mapping:
+          transaction: transaction
+        context_processors:
+          immediate:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: transaction_execute

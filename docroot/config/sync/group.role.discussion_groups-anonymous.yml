@@ -1,0 +1,14 @@
+uuid: 050f82ed-4332-4f7e-bb41-b925dc367632
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.discussion_groups
+id: discussion_groups-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: discussion_groups
+permissions_ui: true
+permissions: {  }

@@ -6,8 +6,11 @@ dependencies:
     - field.field.user.user.field_first_name
     - field.field.user.user.field_function
     - field.field.user.user.field_last_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_userpoints_default_points
     - field.field.user.user.user_picture
   module:
+    - telephone
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -25,7 +28,7 @@ content:
     weight: 0
     settings:
       size: 60
-      placeholder: ''
+      placeholder: Voornaam
     third_party_settings: {  }
     type: string_textfield
     region: content
@@ -33,7 +36,7 @@ content:
     weight: 2
     settings:
       size: 60
-      placeholder: ''
+      placeholder: Functie
     third_party_settings: {  }
     type: string_textfield
     region: content
@@ -41,12 +44,20 @@ content:
     weight: 1
     settings:
       size: 60
-      placeholder: ''
+      placeholder: Achternaam
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_phone:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
 hidden:
   contact: true
+  field_userpoints_default_points: true
   langcode: true
   language: true
   timezone: true

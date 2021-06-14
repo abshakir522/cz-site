@@ -1,4 +1,5 @@
 label: Woordenlijst
+description: 'Alle inhoud, op letter.'
 display:
   default:
     display_title: Hoofd

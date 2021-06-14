@@ -1,4 +1,5 @@
 label: 'Recente reacties'
+description: 'Recente reacties.'
 display:
   default:
     display_title: Hoofd
