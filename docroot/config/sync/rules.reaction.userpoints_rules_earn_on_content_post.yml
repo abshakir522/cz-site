@@ -1,6 +1,6 @@
 uuid: b7008d74-0974-4590-82b7-2f896c7c6244
 langcode: en
-status: false
+status: true
 dependencies:
   enforced:
     module:
@@ -20,17 +20,38 @@ config_version: '3'
 expression:
   id: rules_rule
   uuid: ad278475-6384-4d55-b0d9-c1af73167f87
+  weight: 0
   conditions:
     id: rules_and
     uuid: 61e52580-bbf0-4891-9f0e-d3264bf42a4d
-    conditions: {  }
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 95ab9406-fa74-4a3c-903d-0cc1bdef9a08
+        weight: 0
+        context_values:
+          type: node
+          bundle: my_cv
+        context_mapping:
+          entity: node
+        context_processors:
+          type:
+            rules_tokens: {  }
+          bundle:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        condition_id: rules_entity_is_of_bundle
+        negate: false
   actions:
     id: rules_action_set
     uuid: 51f53d43-d562-4d96-84d1-57159d1edd5e
+    weight: 0
     actions:
       -
         id: rules_action
         uuid: ac254a68-2ea6-4b5e-8675-cb2f519965c3
+        weight: -50
         context_values:
           type: user
         context_mapping:
@@ -43,10 +64,11 @@ expression:
       -
         id: rules_action
         uuid: 6cb00f19-fc81-4b56-a55d-602e9b8f4901
+        weight: -48
         context_values:
           transaction_type_id: userpoints_default_points
           operation_id: userpoints_rules_earn_on_content_post
-          transaction_field_amount: '20'
+          transaction_field_amount: '{{ node.field_points.value }}'
           transaction_field_balance: '0'
           transaction_field_log_message: ''
         context_mapping:
@@ -67,6 +89,7 @@ expression:
       -
         id: rules_action
         uuid: b78f69ef-d71d-44a5-bfdf-d2609ce1cb32
+        weight: -47
         context_values: {  }
         context_mapping:
           data: transaction.field_userpoints_default_linkref
@@ -77,6 +100,7 @@ expression:
       -
         id: rules_action
         uuid: 77c62abd-f4fb-43e4-b2f6-916fedaaed6b
+        weight: -46
         context_values:
           immediate: ''
         context_mapping:
