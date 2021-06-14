@@ -1,0 +1,17 @@
+uuid: 3d42e122-2a24-4191-9129-32cf084a5e82
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Library
+type: library
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

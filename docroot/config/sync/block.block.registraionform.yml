@@ -1,0 +1,26 @@
+uuid: 60fc55f5-8700-4ec8-9774-93716d40151e
+langcode: en
+status: true
+dependencies:
+  module:
+    - my_module
+    - system
+  theme:
+    - bartik
+id: registraionform
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: reg_block
+settings:
+  id: reg_block
+  label: 'Registraion Form'
+  provider: my_module
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

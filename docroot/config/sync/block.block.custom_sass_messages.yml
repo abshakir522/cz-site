@@ -1,0 +1,22 @@
+uuid: 83e9f40c-3e8e-4040-972f-ba8a98905a84
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - custom_sass
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: custom_sass_messages
+theme: custom_sass
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

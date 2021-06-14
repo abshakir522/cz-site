@@ -1,0 +1,44 @@
+uuid: 441fb34f-6805-4dde-83b5-4a9b0d044fb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.training_course.field_points
+    - group.type.training_course
+  module:
+    - path
+id: group.training_course.default
+targetEntityType: group
+bundle: training_course
+mode: default
+content:
+  field_points:
+    weight: 31
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  label:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

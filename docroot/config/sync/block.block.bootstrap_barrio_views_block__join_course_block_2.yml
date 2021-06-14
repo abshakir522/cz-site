@@ -1,0 +1,33 @@
+uuid: 4fc2b588-c903-43d2-bacb-07a2a1e5ebed
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.join_course
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_views_block__join_course_block_2
+theme: bootstrap_barrio
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:join_course-block_2'
+settings:
+  id: 'views_block:join_course-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      forum: forum
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

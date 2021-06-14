@@ -1,0 +1,40 @@
+uuid: c097feda-64d6-49b1-96d4-ca7c2e3c9388
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_block
+    - field.field.block_content.hero_block.body
+    - field.field.block_content.hero_block.field_login_form
+    - field.field.block_content.hero_block.field_registration_form
+  module:
+    - block_field
+    - text
+id: block_content.hero_block.default
+targetEntityType: block_content
+bundle: hero_block
+mode: default
+content:
+  body:
+    label: visually_hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_login_form:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_registration_form:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: afcda74f-7e3c-4aed-97c8-3ba238164817
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_points
+    - group.type.training_course
+id: group.training_course.field_points
+field_name: field_points
+entity_type: group
+bundle: training_course
+label: Points
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

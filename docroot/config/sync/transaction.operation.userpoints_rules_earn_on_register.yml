@@ -1,0 +1,16 @@
+uuid: 4d700895-ce2e-47bc-b516-91cae653c65b
+langcode: en
+status: true
+dependencies:
+  config:
+    - transaction.type.userpoints_default_points
+  enforced:
+    module:
+      - userpoints_rules_example
+_core:
+  default_config_hash: sYEGvmykbeKJlqIXe5-7FnLw6knPu0OSxaNO3TV3Sng
+id: userpoints_rules_earn_on_register
+label: 'Earn points on user register'
+transaction_type: userpoints_default_points
+description: 'Sign-up reward'
+details: {  }

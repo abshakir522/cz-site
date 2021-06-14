@@ -1,0 +1,30 @@
+uuid: fdb508a1-6ad1-4939-9b55-1c2a55b33640
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.trainings
+  module:
+    - system
+    - views
+  theme:
+    - custom_sass
+id: views_block__trainings_block_2
+theme: custom_sass
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:trainings-block_2'
+settings:
+  id: 'views_block:trainings-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

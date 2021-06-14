@@ -1,0 +1,25 @@
+uuid: f91e8c45-45de-4da9-b7c6-b3ac7902203d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - custom_sass
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: custom_sass_branding
+theme: custom_sass
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 003bbfe3-717d-4df4-98e0-7586dacb605b
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+  theme:
+    - custom_sass
+_core:
+  default_config_hash: MjMChFykEa-4UxdnGstVk1FcXqwUF3p_GBJLIFT3_XI
+id: custom_sass_group_operations
+theme: custom_sass
+region: sidebar_first
+weight: -20
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Group operations'
+  provider: group
+  label_display: visible
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility:
+  group_type:
+    id: group_type
+    group_types:
+      discussion_groups: discussion_groups
+      training_course: training_course
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

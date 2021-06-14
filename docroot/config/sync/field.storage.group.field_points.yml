@@ -1,0 +1,20 @@
+uuid: 905ca75e-74f8-4042-ad3e-1759833614b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_points
+field_name: field_points
+entity_type: group
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

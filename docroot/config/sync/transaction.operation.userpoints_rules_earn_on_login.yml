@@ -1,0 +1,16 @@
+uuid: 8e508251-404d-4f4b-a122-09d0ddeb43c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - transaction.type.userpoints_default_points
+  enforced:
+    module:
+      - userpoints_rules_example
+_core:
+  default_config_hash: jIIiXXbW99UC4cQJPNHJVHWk0fJTwPr1m7aa2alkcAw
+id: userpoints_rules_earn_on_login
+label: 'Earn points on user login'
+transaction_type: userpoints_default_points
+description: 'Login reward'
+details: {  }

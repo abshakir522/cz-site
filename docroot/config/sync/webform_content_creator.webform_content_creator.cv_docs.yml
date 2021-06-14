@@ -1,0 +1,63 @@
+uuid: 673754f0-c54e-49dd-a1f9-2f8188b1ea2f
+langcode: en
+status: true
+dependencies: {  }
+id: cv_docs
+title: 'CV Docs'
+webform: my_cv
+field_title: null
+use_encrypt: null
+encryption_profile: null
+sync_content: false
+sync_content_delete: false
+sync_content_node_field: null
+sync_content_field: ''
+elements:
+  body:
+    type: false
+    webform_field: body
+    custom_check: false
+    custom_value: ''
+  field_date_achieved:
+    type: false
+    webform_field: date_acheiced
+    custom_check: false
+    custom_value: ''
+  field_date_issued:
+    type: false
+    webform_field: date_issued
+    custom_check: false
+    custom_value: ''
+  field_document_upload:
+    type: false
+    webform_field: document_upload
+    custom_check: false
+    custom_value: ''
+  field_points:
+    type: false
+    webform_field: points
+    custom_check: false
+    custom_value: ''
+  field_type:
+    type: false
+    webform_field: document_type
+    custom_check: false
+    custom_value: ''
+  field_upload_evidence:
+    type: false
+    webform_field: upload_evidence
+    custom_check: false
+    custom_value: ''
+  field_valid_until:
+    type: false
+    webform_field: valid_until
+    custom_check: false
+    custom_value: ''
+  title:
+    type: false
+    webform_field: title
+    custom_check: false
+    custom_value: ''
+content_type: null
+target_entity_type: node
+target_bundle: my_cv

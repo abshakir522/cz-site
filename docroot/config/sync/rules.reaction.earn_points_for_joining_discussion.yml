@@ -1,0 +1,77 @@
+uuid: cef1a9d5-33cb-4a1f-b754-ac021440120f
+langcode: en
+status: true
+dependencies: {  }
+id: earn_points_for_joining_discussion
+label: 'Earn points for joining Discussion'
+events:
+  -
+    event_name: 'rules_entity_insert:group_content--group_content_type_f70099e7a4b1c'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 0dbb58c6-8c7c-422c-9a86-7001e1502f6c
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: db2fdfab-3ae5-4772-9953-84fe186c9b16
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 25179a40-7eba-45e7-b013-f8268199de27
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 6f28113f-bba7-4f75-8b3a-e389f554a5dd
+        weight: 0
+        context_values:
+          type: user
+        context_mapping:
+          entity_id: group_content.entity_id.target_id
+        context_processors:
+          type:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_entity_fetch_by_id
+      -
+        id: rules_action
+        uuid: f08bce5e-98c9-4b4c-85b3-bca76af36aeb
+        weight: 0
+        context_values:
+          transaction_type_id: userpoints_default_points
+          operation_id: ''
+          transaction_field_amount: '{{ @group.group_route_context:group.field_points.value }}'
+          transaction_field_balance: '0'
+          transaction_field_log_message: abdullah
+        context_mapping:
+          target_entity: entity_fetched
+        context_processors:
+          transaction_type_id:
+            rules_tokens: {  }
+          operation_id:
+            rules_tokens: {  }
+          transaction_field_amount:
+            rules_tokens: {  }
+          transaction_field_balance:
+            rules_tokens: {  }
+          transaction_field_log_message:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: 'transaction_create:userpoints'
+      -
+        id: rules_action
+        uuid: f7f6a643-1da0-4e78-8d15-8e323f07acf2
+        weight: 0
+        context_values:
+          immediate: ''
+        context_mapping:
+          transaction: transaction
+        context_processors:
+          immediate:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: transaction_execute
