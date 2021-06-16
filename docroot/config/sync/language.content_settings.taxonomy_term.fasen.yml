@@ -1,0 +1,11 @@
+uuid: 69351827-f952-4bf5-8685-a099abdb40d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.fasen
+id: taxonomy_term.fasen
+target_entity_type_id: taxonomy_term
+target_bundle: fasen
+default_langcode: site_default
+language_alterable: false

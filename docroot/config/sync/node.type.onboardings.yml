@@ -1,0 +1,17 @@
+uuid: 6878c25b-3b5a-475b-9fdb-0f56ca392ac1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Onboardings
+type: onboardings
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

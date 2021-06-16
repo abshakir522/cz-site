@@ -1,0 +1,11 @@
+uuid: 359ae9f3-0e84-48e7-af94-72aeba07094b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.inhoud
+id: taxonomy_term.inhoud
+target_entity_type_id: taxonomy_term
+target_bundle: inhoud
+default_langcode: site_default
+language_alterable: false
