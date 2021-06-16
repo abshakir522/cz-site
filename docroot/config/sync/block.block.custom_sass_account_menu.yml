@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
 id: custom_sass_account_menu
 theme: custom_sass
-region: secondary_menu
-weight: 0
+region: header
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:

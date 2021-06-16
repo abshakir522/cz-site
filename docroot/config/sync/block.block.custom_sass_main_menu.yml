@@ -12,8 +12,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: custom_sass_main_menu
 theme: custom_sass
-region: primary_menu
-weight: 0
+region: header
+weight: -11
 provider: null
 plugin: 'system_menu_block:main'
 settings:
