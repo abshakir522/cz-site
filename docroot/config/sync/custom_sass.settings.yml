@@ -34,7 +34,7 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: 'public://attachment.png'
+  path: ''
 favicon:
   use_default: 1
 bootstrap_barrio_source: '0'
