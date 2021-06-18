@@ -11,8 +11,9 @@ Description: Bootstrap 4 with Sass
   --darkblue: #0F3362;
   --lightblue: rgba(255,255,255,.6);
   --redish: #FF4800;
-  --kingsblue: #93479A;
+  --kingsblue: #8F1093;
   --primary: #0079C0;
+  --academy1 : #B29857;
 }
 
 /* GENERAL STYLES
@@ -20,6 +21,9 @@ Description: Bootstrap 4 with Sass
 
 body {
     background: $white;
+}
+.text-muted{
+  color: var(--academy1) !important;
 }
 
 
@@ -235,7 +239,7 @@ a {
       div.form{
         margin-left: 3rem;
         margin-right: 3rem;
-        background-image: url(../images/form-bg.jpg);
+        background-image: url(../images/form-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -307,6 +311,7 @@ a {
   .cv .title{
     color: var(--kingsblue);
     font-weight: bold;
+    margin-bottom: 3rem;
   }
   .cv .col-item{
     margin: 2%;
@@ -321,7 +326,9 @@ a {
     list-style: none;
     // background: rgba(red, green, blue, .5);
   }
-  
+  a.upload-link {
+    float: right;
+}
   
   
   
@@ -348,3 +355,25 @@ a {
       padding: 30% 0;
     }
   }
+  @media screen and (min-width: 992px) {
+    a.upload-link {
+    padding-right: 100px;
+}
+
+}
+
+fieldset{
+  legend{
+    display: none;
+  }
+}
+.webform-submission-form{
+  .description{
+    display: none;
+  }
+  .js-form-type-textfield, .js-form-type-date{
+    label{
+      display: none;
+    }
+  }
+}

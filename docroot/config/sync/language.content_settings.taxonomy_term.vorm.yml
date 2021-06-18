@@ -1,0 +1,11 @@
+uuid: fe02a79e-9468-491d-a8d0-fd9796d1123d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vorm
+id: taxonomy_term.vorm
+target_entity_type_id: taxonomy_term
+target_bundle: vorm
+default_langcode: site_default
+language_alterable: false

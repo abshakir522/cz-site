@@ -1,0 +1,22 @@
+uuid: 9f20b6d5-4a4d-4dfe-a9e1-d3041795f9d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.onboardings
+id: node.onboardings.promote
+field_name: promote
+entity_type: node
+bundle: onboardings
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

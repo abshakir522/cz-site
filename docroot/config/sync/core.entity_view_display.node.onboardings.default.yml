@@ -1,0 +1,32 @@
+uuid: 59cdac8c-ebc0-4bcc-a53c-516ca0d88115
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.onboardings.field_video
+    - node.type.onboardings
+  module:
+    - user
+    - video
+id: node.onboardings.default
+targetEntityType: node
+bundle: onboardings
+mode: default
+content:
+  field_video:
+    weight: 101
+    label: above
+    settings:
+      width: '854'
+      height: '480'
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_player
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: cbddb69b-80d7-4a7f-8aa3-5b93a843dbe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.onboardings
+id: node.onboardings
+target_entity_type_id: node
+target_bundle: onboardings
+default_langcode: site_default
+language_alterable: false

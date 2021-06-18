@@ -1,0 +1,23 @@
+uuid: 5fa8d24f-a117-4804-af29-e1d7d5234f72
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.onboardings.field_video
+    - node.type.onboardings
+  module:
+    - user
+id: node.onboardings.teaser
+targetEntityType: node
+bundle: onboardings
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_video: true
+  langcode: true
