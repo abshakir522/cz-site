@@ -6,14 +6,15 @@ dependencies:
     - system.menu.main
   module:
     - system
+    - user
   theme:
     - custom_sass
 _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: custom_sass_main_menu
 theme: custom_sass
-region: primary_menu
-weight: 0
+region: header
+weight: -11
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -24,4 +25,16 @@ settings:
   level: 1
   depth: 1
   expand_all_items: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

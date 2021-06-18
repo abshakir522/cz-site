@@ -87,7 +87,7 @@ a {
   
   .navbar-main{
     display: flex;
-    justify-content:space-between;
+    // justify-content:space-between;
     background: var(--lightgray);
     padding: 1% 0;
     border-radius: 0% 0 10px 10px;
@@ -116,14 +116,21 @@ a {
   }
   .navbar-main .navbar-left-item{
     position: absolute;
-    top: 85%;
+    top: 95%;
+    background: #F5F5F5;
+    left: 0;
+    border-radius: 0 0 0 10px;
+    padding: 30px;
   }
   
   .navbar-main .navbar-right-item{
     position: absolute;
-    top: 85%;
+    top: 95%;
     text-align: right;
-    right: 2%;
+    right: 0;
+    background: #F5F5F5;
+    border-radius: 0 0 10px 0;
+    padding: 30px;
   }
   .navbar-toggler-circle{
     background: var(--brown);

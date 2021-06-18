@@ -9,6 +9,8 @@ module:
   breakpoint: 0
   ckeditor: 0
   color: 0
+  colorbox: 0
+  colorbox_load: 0
   comment: 0
   config: 0
   contact: 0
@@ -42,6 +44,7 @@ module:
   menu_link_content: 0
   menu_ui: 0
   my_module: 0
+  ng_lightbox: 0
   node: 0
   options: 0
   page_cache: 0

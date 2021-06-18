@@ -69,4 +69,10 @@ settings:
   path_alias:
     handler: 'default:path_alias'
     handler_settings: {  }
+  webform_submission:
+    handler: 'default:webform_submission'
+    handler_settings: {  }
+  flagging:
+    handler: 'default:flagging'
+    handler_settings: {  }
 field_type: dynamic_entity_reference
