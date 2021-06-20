@@ -313,6 +313,7 @@ display:
       defaults:
         header: false
       display_description: ''
+      block_description: join_course
     cache_metadata:
       max-age: -1
       contexts:

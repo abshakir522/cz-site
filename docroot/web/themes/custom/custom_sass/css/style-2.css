@@ -1,0 +1,225 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #0079C0;
+  --secondary: #ff4e2e;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+
+
+#training-page{
+	width: 100%;
+}
+div#training-page em {
+    padding: 0% 0% 0% 8%;
+}
+.training-page-section{
+	display: flex;
+    width: 90%;
+    margin: 2% auto;
+    background: var(--orange);
+    border-radius: 19px;
+}
+.training-page-section-title{
+	width: 80%;
+}
+.training-page-section-title h2 {
+    color: white;
+    font-size: 2.6vw;
+    font-family: system-ui;
+	  padding: 13% 0% 1.1% 4%;
+}
+.training-page-section-button{
+	width: 20%;
+}
+.training-page-section-button p {
+    padding: 9% 0% 0% 55%;
+}
+.training-page-section-button p {
+   padding: 60% 0% 0% 8%;
+    color: white;
+    font-family: system-ui;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.training-page-section-2 {
+	  display: flex;
+    width: 90%;
+    margin: auto;
+	  padding: 2% 0% 3% 0%;
+}
+.training-page-section-2-detail {
+    width: 75%;
+    overflow-y: scroll;
+    max-height: 550px;
+	  padding: 0% 6% 0% 0%;
+	  
+}
+.training-page-section-2-detail::-webkit-scrollbar {
+    width: 6px;
+}
+.training-page-section-2-detail::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44,#d5d5d5),color-stop(0.72,#d5d5d5),color-stop(0.86,#d5d5d5));
+}
+.training-page-section-2-sidebar {
+    width: 30%;
+}
+.training-page-section-2-detail p {
+    font-size: 1.4vw;
+    font-family: system-ui;
+    color: #a65e01;
+}
+
+.training-page-section-2-detail p {
+   font-size: 1.3vw;
+    font-family: serif;
+    color: #8f806c;
+    padding: 2% 0% 0% 5%;
+}
+
+.training-page-section-2-sidebar-status {
+	  display: flex;
+    padding: 20% 0% 0% 10%;
+}
+.training-page-section-2-sidebar-status p {
+    padding: 1% 0% 0% 6%;
+    font-size: 1vw;
+    font-family: system-ui;
+    color: darkgrey;
+	  margin: 0px;
+}
+.training-page-section-2-sidebar-date {
+	  display: flex;
+    padding: 0% 0% 0% 10%;
+}
+.training-page-section-2-sidebar-date p {
+    padding: 1% 0% 0% 6%;
+    font-size: 1vw;
+    font-family: system-ui;
+    color: darkgrey;
+	  margin: 0px;
+}
+.training-page-section-2-sidebar-detail{
+    padding: 10% 0% 1% 10%;
+}
+.training-page-section-2-sidebar-detail p {
+    padding: 1% 8% 0% 6%;
+    font-size: 1vw;
+    font-family: system-ui;
+    color: darkgrey;
+	  margin: 0px;
+}
+.my-forum-topic-section-2-sidebar-Points{
+	 display: flex;
+    padding: 0% 0% 0% 10%;
+}
+
+.my-forum-topic-section-2-sidebar-Points p {
+    padding: 1% 0% 0% 6%;
+    font-size: 1vw;
+    font-family: system-ui;
+    color: darkgrey;
+	  margin: 0px;
+}
+.my-forum-topic-section-2-sidebar-document{
+    padding: 0% 0% 0% 10%;
+}
+
+.my-forum-topic-section-2-sidebar-document p {
+    padding: 1% 0% 1% 6%;
+    font-size: 1vw;
+    font-family: system-ui;
+    color: darkgrey;
+	  margin: 0px;
+}
+.my-forum-topic-section-2-sidebar-document span a {
+    font-size: 1.1vw;
+    color: chocolate;
+    /* color: #0079C0; */
+    padding: 0% 0% 0% 5%;
+}
+
+
+.training-page-section-2-sidebar-tags{
+    padding: 5% 0% 1% 10%;
+}
+.training-page-section-2-sidebar-tags p {
+    padding: 1% 8% 4% 6%;
+    font-size: 1vw;
+    font-family: system-ui;
+    color: darkgrey;
+	  margin: 0px;
+}
+.training-page-section-2-sidebar-tags span .list-group{
+	flex-direction: unset;
+}
+.training-page-section-2-sidebar-tags span .list-group-item {
+	border: none;
+}
+.training-page-section-2-sidebar-tags span .list-group-item {
+    border: none;
+    width: 50%;
+    margin: 1%;
+	  font-size: 1vw;
+    padding: .7vw 0vw .7vw .7vw;
+    background: #f8f6f6;
+    display: inline-block !important;
+    color: gray;
+}
+
+/*  forum section css*/
+.my-forum-topic-section {
+    width: 90%;
+    background: #7632b4;
+    display: flex;
+    border-radius: 14px;
+    margin: auto;
+}
+.my-forum-topic-section-title {
+    width: 80%;
+    padding: 9% 3% 2% 3%;
+}
+.my-forum-topic-section-title h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vw;
+}
+.my-forum-topic-section-button {
+    width: 20%;
+	  padding: 12% 0% 0% 0%;
+}
+.my-forum-topic-section-button span {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+}

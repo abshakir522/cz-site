@@ -6,6 +6,15 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.forum.body
     - field.field.node.forum.comment_forum
+    - field.field.node.forum.field_date_achieved
+    - field.field.node.forum.field_documents
+    - field.field.node.forum.field_location
+    - field.field.node.forum.field_points
+    - field.field.node.forum.field_remarks
+    - field.field.node.forum.field_remote_url
+    - field.field.node.forum.field_status
+    - field.field.node.forum.field_trainer
+    - field.field.node.forum.field_type
     - field.field.node.forum.taxonomy_forums
     - node.type.forum
   module:
@@ -39,4 +48,13 @@ content:
     third_party_settings: {  }
 hidden:
   comment_forum: true
+  field_date_achieved: true
+  field_documents: true
+  field_location: true
+  field_points: true
+  field_remarks: true
+  field_remote_url: true
+  field_status: true
+  field_trainer: true
+  field_type: true
   langcode: true

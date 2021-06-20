@@ -1,28 +1,26 @@
-uuid: 72767559-e417-421b-aa0e-c66a30f7618f
+uuid: 9f92f862-82e0-4e22-8388-afaa3f1ae41b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.taxonomy_forums
+    - field.storage.node.field_documents
+    - media.type.training_document
     - node.type.forum
-    - taxonomy.vocabulary.forums
-_core:
-  default_config_hash: n0THs2iyQuOn2Iz8VTb6TgdPrniPS352uPVlCADxnn4
-id: node.forum.taxonomy_forums
-field_name: taxonomy_forums
+id: node.forum.field_documents
+field_name: field_documents
 entity_type: node
 bundle: forum
-label: Forums
+label: Documents
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:media'
   handler_settings:
     target_bundles:
-      forums: forums
+      training_document: training_document
     sort:
       field: _none
     auto_create: true

@@ -1,0 +1,21 @@
+uuid: 627f445c-b66a-4c41-96da-68ff7032d6c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_remarks
+    - node.type.forum
+  module:
+    - text
+id: node.forum.field_remarks
+field_name: field_remarks
+entity_type: node
+bundle: forum
+label: Remarks
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
