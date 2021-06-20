@@ -1,6 +1,0 @@
-sweetalert2_js:
-  version: VERSION
-  js:
-    /libraries/sweetalert2/sweetalert2.all.js: {}
-  dependencies:
-    - core/drupal.ajax

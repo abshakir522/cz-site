@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad73b07c770ebd4ffcaa2d081aa21730",
+    "content-hash": "e5ab48b09937a4474612acfb7cd9c2ea",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3293,6 +3293,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "config": "https://www.drupal.org/files/issues/2019-10-02/popup_after_login-config-name-3080062.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
