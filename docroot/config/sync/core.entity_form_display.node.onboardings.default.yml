@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.onboardings.field_points
     - field.field.node.onboardings.field_video
     - node.type.onboardings
   module:
@@ -19,6 +20,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_points:
+    weight: 122
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_video:
     weight: 121
     settings:

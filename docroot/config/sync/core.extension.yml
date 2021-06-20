@@ -9,8 +9,6 @@ module:
   breakpoint: 0
   ckeditor: 0
   color: 0
-  colorbox: 0
-  colorbox_load: 0
   comment: 0
   config: 0
   contact: 0
@@ -39,6 +37,7 @@ module:
   language: 0
   link: 0
   locale: 0
+  login_destination: 0
   media: 0
   media_library: 0
   menu_link_content: 0
@@ -50,12 +49,14 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  popup_after_login: 0
   quickedit: 0
   rdf: 0
   rules: 0
   search: 0
   shortcut: 0
   state_machine: 0
+  sweetalert2: 0
   system: 0
   taxonomy: 0
   telephone: 0

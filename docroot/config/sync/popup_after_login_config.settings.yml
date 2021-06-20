@@ -1,0 +1,9 @@
+popup_after_login_choose_role:
+  authenticated: authenticated
+  coach: coach
+  administrator: 0
+  content_admin: 0
+popup_after_login_first_title: 'Welcome message!'
+popup_after_login_first_message: "<p>Title for 'After first time login' popup. Leave it blank if you want to disable this popup.&nbsp;Title for 'After first time login' popup. Leave it blank if you want to disable this popup.</p>\r\n"
+popup_after_login_first_title_always: 'Maak je profiel compleet'
+popup_after_login_first_message_always: "<p>Title for 'After first time login' popup. Leave it blank if you want to disable this popup.&nbsp;Title for 'After first time login' popup. Leave it blank if you want to disable this popup.</p>\r\n"

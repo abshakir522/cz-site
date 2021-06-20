@@ -1,0 +1,31 @@
+uuid: b7c809fc-9d2f-4594-b927-91ef850e1b63
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:intro_video:d2f9f40b-a022-4f68-b821-5a6c8763d283'
+  module:
+    - block_content
+    - system
+  theme:
+    - custom_sass
+id: maakjeprofielcompleet
+theme: custom_sass
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:d2f9f40b-a022-4f68-b821-5a6c8763d283'
+settings:
+  id: 'block_content:d2f9f40b-a022-4f68-b821-5a6c8763d283'
+  label: 'maak je profiel compleet'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

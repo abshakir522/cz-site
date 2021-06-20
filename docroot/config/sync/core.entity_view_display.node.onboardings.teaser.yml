@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.onboardings.field_points
     - field.field.node.onboardings.field_video
     - node.type.onboardings
   module:
@@ -13,11 +14,17 @@ targetEntityType: node
 bundle: onboardings
 mode: teaser
 content:
+  flag_bookmark:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  field_points: true
   field_video: true
   langcode: true

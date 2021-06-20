@@ -1,0 +1,31 @@
+uuid: deb3f6b4-46a9-4bc7-8af5-20789c8e77e7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:intro_video:42eb5b73-828f-4078-b93d-4f949a7a6966'
+  module:
+    - block_content
+    - system
+  theme:
+    - custom_sass
+id: introvideo
+theme: custom_sass
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:42eb5b73-828f-4078-b93d-4f949a7a6966'
+settings:
+  id: 'block_content:42eb5b73-828f-4078-b93d-4f949a7a6966'
+  label: welcom!
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

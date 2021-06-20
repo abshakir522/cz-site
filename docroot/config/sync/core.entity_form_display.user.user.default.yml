@@ -7,9 +7,11 @@ dependencies:
     - field.field.user.user.field_function
     - field.field.user.user.field_last_name
     - field.field.user.user.field_phone
+    - field.field.user.user.field_picture
     - field.field.user.user.field_userpoints_default_points
-    - field.field.user.user.user_picture
+    - image.style.thumbnail
   module:
+    - image
     - telephone
     - user
 _core:
@@ -55,10 +57,17 @@ content:
     third_party_settings: {  }
     type: telephone_default
     region: content
+  field_picture:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
 hidden:
   contact: true
   field_userpoints_default_points: true
   langcode: true
   language: true
   timezone: true
-  user_picture: true

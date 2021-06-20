@@ -16,12 +16,12 @@ bundles:
 entity_type: node
 global: false
 weight: 0
-flag_short: 'Bookmark this'
-flag_long: 'Add this post to your bookmarks'
-flag_message: 'This post has been added to your bookmarks'
-unflag_short: 'Remove bookmark'
-unflag_long: 'Remove this post from your bookmarks'
-unflag_message: 'This post has been removed from your bookmarks'
+flag_short: 'Mark as seen'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Mark as not watched'
+unflag_long: ''
+unflag_message: ''
 unflag_denied_text: ''
 flag_type: 'entity:node'
 link_type: ajax_link
