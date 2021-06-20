@@ -1,0 +1,21 @@
+uuid: 37a32a7d-022f-4d36-a3c9-f48b3d494fb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.forum
+  module:
+    - options
+id: node.forum.field_type
+field_name: field_type
+entity_type: node
+bundle: forum
+label: 'Training type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

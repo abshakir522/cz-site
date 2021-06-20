@@ -13,17 +13,26 @@ settings:
   allowed_values:
     -
       value: 1
-      label: Diploma
+      label: 'At location'
     -
       value: 2
-      label: 'Training or course'
+      label: Webinar
     -
       value: 3
-      label: certificate
+      label: 'Not live'
+    -
+      value: 4
+      label: Live
+    -
+      value: 5
+      label: Partner
+    -
+      value: 6
+      label: 'Video training'
   allowed_values_function: ''
 module: options
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

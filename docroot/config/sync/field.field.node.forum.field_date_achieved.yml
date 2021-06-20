@@ -1,0 +1,21 @@
+uuid: caecfe33-0113-4806-a0ad-775056478887
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_achieved
+    - node.type.forum
+  module:
+    - datetime
+id: node.forum.field_date_achieved
+field_name: field_date_achieved
+entity_type: node
+bundle: forum
+label: 'Training Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
