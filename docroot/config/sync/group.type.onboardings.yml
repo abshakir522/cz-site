@@ -1,0 +1,10 @@
+uuid: 3955fa90-e87a-4370-92c7-2cebc88a2fd0
+langcode: en
+status: true
+dependencies: {  }
+id: onboardings
+label: Onboardings
+description: ''
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

@@ -2,6 +2,6 @@ patterns: ''
 default_width: 700
 lightbox_class: ''
 skip_admin_paths: false
-renderer: drupal_dialog
+renderer: null
 _core:
   default_config_hash: ySh6lmKUH2SCk5s532zkdNU9PeyNywkaFGVLbWBbRWY

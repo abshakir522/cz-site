@@ -1,0 +1,32 @@
+uuid: ac1d9c0d-6998-488e-a529-f0dd8a827649
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_video
+    - field.field.block_content.intro_video.body
+    - field.field.block_content.intro_video.field_video
+  module:
+    - text
+    - video
+id: block_content.intro_video.default
+targetEntityType: block_content
+bundle: intro_video
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_video:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: video_url
+    region: content
+hidden:
+  langcode: true

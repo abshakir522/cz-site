@@ -1,0 +1,14 @@
+uuid: 379696dc-5d2d-4ed9-93fa-7334c142ee1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.onboardings
+id: onboardings-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: onboardings
+permissions_ui: true
+permissions: {  }

@@ -14,13 +14,40 @@ Description: Bootstrap 4 with Sass
   --kingsblue: #8F1093;
   --primary: #0079C0;
   --academy1 : #B29857;
+  --moth-purple: #511BA1;
+}
+@font-face {
+  font-family: kollektif;
+  src: url(../fonts/Kollektif.ttf);
+}
+@font-face {
+  font-family: kollektif-bold;
+  src: url(../fonts/Kollektif-Bold.ttf);
+}
+@font-face {
+  font-family: kollektif-italic;
+  src: url(../fonts/Kollektif-Italic.ttf);
+}
+@font-face {
+  font-family: kollektif-it-bold;
+  src: url(../fonts/Kollektif-BoldItalic.ttf);
+}
+@font-face {
+  font-family: muli;
+  src: url(../fonts/Muli-Bold.ttf);
 }
 
 /* GENERAL STYLES
 -------------------------------------------------*/
 
+
 body {
     background: $white;
+    font-family: kollektif;
+    overflow-wrap: break-word;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: muli;
 }
 .text-muted{
   color: var(--academy1) !important;
@@ -89,8 +116,16 @@ a {
     display: flex;
     // justify-content:space-between;
     background: var(--lightgray);
-    padding: 1% 0;
+    // padding: 1% 0;
     border-radius: 0% 0 10px 10px;
+  }
+  .custom-pg-title{
+    font-weight: bold;
+    color: var(--moth-purple);
+  }
+  .title-2{
+    font-weight: bold;
+    color: var(--kingsblue);
   }
   .navbar-left{
     width: 68%;
@@ -131,6 +166,7 @@ a {
     background: #F5F5F5;
     border-radius: 0 0 10px 0;
     padding: 30px;
+    z-index: 1;
   }
   .navbar-toggler-circle{
     background: var(--brown);
@@ -167,6 +203,14 @@ a {
 
   /* HERO FORM */
   .form-hero{
+    .form-col{
+      
+    }
+    div.form{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../images/form-bg.png);
+    }
     margin-top: 4rem;
     margin-bottom: 3rem;
     .nav-pills {
@@ -184,7 +228,7 @@ a {
         transition: width .2s;
       }
       .nav-link:hover{
-        background-color: var(--primary);
+        background-color: var(--academy1);
         width: 101%;
         color: white;
         opacity: 1;
@@ -239,9 +283,7 @@ a {
       div.form{
         margin-left: 3rem;
         margin-right: 3rem;
-        background-image: url(../images/form-bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        
       }
       div#edit-field-first-name-wrapper {
         width: 45%;
@@ -262,6 +304,16 @@ a {
       }
     }
   }
+  @media screen and (min-width: 992px) {
+    .form-hero{
+      .smry{
+        padding-bottom: 7rem;
+      }
+      .row.form{
+        height: 100%;
+      }
+    }
+  }
   /*******************/
   .cards{
     display: flex;
@@ -278,9 +330,10 @@ a {
       
     }
     .card-circle{
-      border-radius: 50%;
       padding: 10% 0;
       text-align: center;
+      clip-path: circle();
+      /* border-radius: 50%; */
      }
      .card-head{
        font-weight: 600;
@@ -352,7 +405,7 @@ a {
       padding: 15% 4% 4% 4%;
     }
   .cards .card-circle {
-      padding: 30% 0;
+      padding: 30% 0 !important;
     }
   }
   @media screen and (min-width: 992px) {
@@ -376,4 +429,234 @@ fieldset{
       display: none;
     }
   }
+}
+/************ONBOARDING**********/
+.onb {
+  img, img.thumb{
+    width: 100%;
+    cursor: pointer;
+  }
+  .onb-title{
+    h3{
+      font-weight: bold;
+      color: var(--academy1);
+    }
+  }
+  .flag{
+    a{
+      display: block;
+      height: 10px;
+      visibility: hidden;
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: var(--lightgray);
+        visibility: visible;
+        border-radius: 50%;
+      }
+    }
+  }
+  .flag.action-unflag{
+    a{
+      &::before{
+        content: url(../images/tick-sm.png);
+      }
+    }
+  }
+}
+#videoModal{
+  .modal-body{
+    padding: 0;
+  }
+  .modal-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .modal-content{
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  button.close {
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: -10px;
+    right: -9px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+#introvideoModal, #profcompModal{
+  // .modal-dialog{
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
+  .modal-body{
+    .title-2{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      color: var(--academy1);
+    }
+    button.close{
+      opacity: 1;
+      float: none;
+      font-size: 1rem;
+      color: white;
+      background-color: var(--academy1);
+      margin: auto;
+      display: block;
+      padding: 8px 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .onb{
+    .row{
+      padding-left: 1.5rem;
+    }
+  }
+  #introvideoModal, #profcompModal{
+    .modal-content{
+      border-radius: 2rem;
+    }
+    .modal-body{
+       max-width: 70%;
+       margin: auto; 
+    }
+  }
+}
+
+
+/*************FOOTER**********/
+footer{
+  margin-top: 5%;
+  color: #665A1E;
+}
+footer .hallo-image{
+  padding: 0;
+  
+}
+footer .hallo-image> img{
+  width: 100%;
+  height: 100%;
+}
+
+footer .footer-intro{
+  background: #F7F7F7;
+  padding: 3%;
+}
+footer .footer-intro .intro-body{
+  margin: 2rem 0 7rem 0;
+  max-width: 730px;
+  margin-left: auto;
+    text-align: justify;
+    font-size: 1.2rem;
+
+}
+footer .footer-intro .logo-image{
+  img{
+    max-width: 80%;
+  }
+  width: 75%;
+  margin-left: auto;
+}
+footer .footer-intro .contact{
+  text-align: end;
+}
+@media screen and (max-width: 992px) {
+  .cards .card{
+    padding: 12% 2% 2% 2%;
+  }
+  .cards .card-circle {
+    padding: 15% 0;
+  }
+  footer .footer-intro .logo-image{
+    width: 75%;
+    margin: 0 auto;
+  }
+  footer .footer-intro .intro-body{
+    margin: 2rem auto;
+  
+  }
+  footer .footer-intro .contact{
+    text-align: center;
+  }
+
+}
+.cz-about-title{
+  max-width: 600px;
+  margin: auto;
+  color: var(--brown);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 60px;
+    margin-bottom: 20px;
+}
+.cz-about{
+  max-width: 600px;
+  margin: auto;
+  color: var(--academy1);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+}
+/************/
+.section-users{
+  padding: 5% 8%;
+  color: #665A1E;
+}
+
+.section-users .heading h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.section-users .heading p{
+  max-width: 50%; 
+  font-size: 1rem;
+  color: var(--academy1);
+}
+.section-users hr{
+  border: 2px solid;
+  max-width: 90%;
+  margin: 2rem;
+}
+.section-users .user{
+  display: flex;
+}
+
+.section-users .user .user-image{
+  clip-path: circle();
+  width: 150px;
+  height: 150px;
+  display: flex;
+  img{
+    max-width: 100%;
+  }
+}
+.section-users .user .user-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.section-users .user .user-name{
+  margin: 0;
+  color: #93479A;
+}
+.section-users .user .function{
+  color: var(--academy1);
 }

@@ -1,0 +1,25 @@
+uuid: b99d888d-aff0-46e3-bec8-4b43f90c0be9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_points
+    - node.type.onboardings
+id: node.onboardings.field_points
+field_name: field_points
+entity_type: node
+bundle: onboardings
+label: Points
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

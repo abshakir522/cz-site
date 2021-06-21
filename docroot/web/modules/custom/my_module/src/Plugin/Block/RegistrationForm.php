@@ -23,9 +23,14 @@ class RegistrationForm extends BlockBase{
       ->getFormObject('user', 'register')
       ->setEntity($entity);
     $form = \Drupal::formBuilder()->getForm($formObject);
-    $form['mail']['#attributes']['placeholder'] = t('E-mailadres');
-    $form['pass']['#attributes']['placeholder'] = t('Wachtwood');
-    $form['actions']['submit']['#value'] = t('Register now!');
+    unset($form['field_picture']);
+    unset($form['field_phone']);
+    // $form['mail']['#attributes']['placeholder'] = t('E-mailadres');
+    // $form['pass']['#attributes']['placeholder'] = t('Wachtwood');
+    // $form['']['#attributes']['placeholder'] = t('Wachtwood');
+    // $form['pass']['und'][0]['value']['#attributes']['placeholder'] = t('Placeholder text');
+    // $form['email']['und'][0]['value']['#attributes']['placeholder'] = t('Placeholder text');
+    $form['actions']['submit']['#value'] = t('Registeren');
     return $form;
 
   }

@@ -1,0 +1,11 @@
+uuid: 2259b4a2-1395-4116-9c91-7565983a58c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_video
+id: block_content.intro_video
+target_entity_type_id: block_content
+target_bundle: intro_video
+default_langcode: site_default
+language_alterable: false

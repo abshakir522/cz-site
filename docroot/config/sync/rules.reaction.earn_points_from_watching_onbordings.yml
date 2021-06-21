@@ -1,0 +1,77 @@
+uuid: aae3b2d2-af87-4aa7-9ffb-394f8df7fa68
+langcode: en
+status: true
+dependencies: {  }
+id: earn_points_from_watching_onbordings
+label: 'Earn Points from watching Onbordings'
+events:
+  -
+    event_name: 'rules_entity_insert:flagging--bookmark'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 09e6610e-045d-42dd-b52d-9283b34e3235
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: a76dc48c-748c-4d7d-b311-1d2ae3c9db80
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 883aa333-97e5-4b30-a8ba-6280920fffc3
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 9cd8d375-7129-467e-afa3-4bbda83b5209
+        weight: -50
+        context_values:
+          type: node
+        context_mapping:
+          entity_id: flagging.flagged_entity.target_id
+        context_processors:
+          type:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_entity_fetch_by_id
+      -
+        id: rules_action
+        uuid: b897755a-a7ef-4087-a92c-10ea0cfdc157
+        weight: -48
+        context_values:
+          transaction_type_id: userpoints_default_points
+          operation_id: ''
+          transaction_field_amount: '{{ flagging.flagged_entity.entity.field_points }}'
+          transaction_field_balance: '0'
+          transaction_field_log_message: ''
+        context_mapping:
+          target_entity: '@user.current_user_context:current_user'
+        context_processors:
+          transaction_type_id:
+            rules_tokens: {  }
+          operation_id:
+            rules_tokens: {  }
+          transaction_field_amount:
+            rules_tokens: {  }
+          transaction_field_balance:
+            rules_tokens: {  }
+          transaction_field_log_message:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: 'transaction_create:userpoints'
+      -
+        id: rules_action
+        uuid: c4b41d2f-fb0f-44ae-8d9e-83eb690ff6f8
+        weight: -47
+        context_values:
+          immediate: ''
+        context_mapping:
+          transaction: transaction
+        context_processors:
+          immediate:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: transaction_execute

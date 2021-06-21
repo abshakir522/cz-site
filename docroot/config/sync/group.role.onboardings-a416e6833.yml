@@ -1,0 +1,17 @@
+uuid: a786b381-0853-4310-b913-6dbee14ea17d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.onboardings
+  enforced:
+    config:
+      - user.role.administrator
+id: onboardings-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: onboardings
+permissions_ui: false
+permissions: {  }

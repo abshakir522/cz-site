@@ -1,0 +1,23 @@
+uuid: 91482898-1a1d-4838-926f-34ca9b6143e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_video
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.intro_video.body
+field_name: body
+entity_type: block_content
+bundle: intro_video
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

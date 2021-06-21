@@ -1,0 +1,31 @@
+uuid: 39f5a2ce-df79-4f69-affc-9b863adeb5e2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7dd39f12-983c-49fc-8147-3eba1252de39'
+  module:
+    - block_content
+    - system
+  theme:
+    - custom_sass
+id: aboutcz
+theme: custom_sass
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7dd39f12-983c-49fc-8147-3eba1252de39'
+settings:
+  id: 'block_content:7dd39f12-983c-49fc-8147-3eba1252de39'
+  label: 'about CZ'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

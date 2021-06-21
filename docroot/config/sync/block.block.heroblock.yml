@@ -2,8 +2,12 @@ uuid: a2e4923d-37cf-4e53-a6b3-d5f4bb9a4c47
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:hero_block:da1a05b1-bc60-4720-a745-3de2bfd91b2d'
   module:
+    - block_content
     - system
+    - user
   theme:
     - custom_sass
 id: heroblock
@@ -26,3 +30,10 @@ visibility:
     pages: '<front>'
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

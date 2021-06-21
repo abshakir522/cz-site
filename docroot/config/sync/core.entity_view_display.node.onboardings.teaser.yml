@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.onboardings.field_points
     - field.field.node.onboardings.field_video
     - node.type.onboardings
   module:
@@ -24,5 +25,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_points: true
   field_video: true
   langcode: true

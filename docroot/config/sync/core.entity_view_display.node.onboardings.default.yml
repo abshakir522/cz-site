@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.onboardings.field_points
     - field.field.node.onboardings.field_video
     - node.type.onboardings
   module:
@@ -13,6 +14,17 @@ targetEntityType: node
 bundle: onboardings
 mode: default
 content:
+  field_points:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
   field_video:
     weight: 101
     label: above

@@ -1,0 +1,17 @@
+uuid: 39710989-2cec-4dd6-8e5b-61a31ab9ecfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.onboardings
+  enforced:
+    config:
+      - user.role.coach
+id: onboardings-aeef15ea9
+label: Coach
+weight: 3
+internal: true
+audience: outsider
+group_type: onboardings
+permissions_ui: false
+permissions: {  }
