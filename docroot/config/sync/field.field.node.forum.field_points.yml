@@ -1,0 +1,23 @@
+uuid: f8b78c5b-4f09-480b-b973-a1329ed6b6f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_points
+    - node.type.forum
+id: node.forum.field_points
+field_name: field_points
+entity_type: node
+bundle: forum
+label: Points
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

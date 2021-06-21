@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.training.field_date_achieved
     - field.field.node.training.field_documents
     - field.field.node.training.field_location
+    - field.field.node.training.field_remarks
     - field.field.node.training.field_remote_url
+    - field.field.node.training.field_status
     - field.field.node.training.field_trainer
     - field.field.node.training.field_training_type
     - node.type.training
@@ -54,6 +56,13 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_remarks:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_remote_url:
     weight: 109
     label: above
@@ -61,6 +70,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_status:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_trainer:
     weight: 105

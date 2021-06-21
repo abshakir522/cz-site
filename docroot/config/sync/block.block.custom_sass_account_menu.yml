@@ -1,6 +1,6 @@
 uuid: 8eec441f-c7cb-4026-96b1-dc3b7690de3f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -26,15 +26,13 @@ settings:
   depth: 1
   expand_all_items: false
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: true
-    context_mapping: {  }
   user_role:
     id: user_role
     roles:
-      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+      coach: coach
+      content_admin: content_admin
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

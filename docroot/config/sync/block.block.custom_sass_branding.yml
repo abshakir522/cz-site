@@ -1,9 +1,10 @@
 uuid: f91e8c45-45de-4da9-b7c6-b3ac7902203d
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
+    - user
   theme:
     - custom_sass
 _core:
@@ -23,8 +24,13 @@ settings:
   use_site_name: true
   use_site_slogan: true
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: true
-    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      coach: coach
+      content_admin: content_admin
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

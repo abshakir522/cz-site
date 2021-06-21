@@ -8,7 +8,9 @@ dependencies:
     - field.field.node.training.field_date_achieved
     - field.field.node.training.field_documents
     - field.field.node.training.field_location
+    - field.field.node.training.field_remarks
     - field.field.node.training.field_remote_url
+    - field.field.node.training.field_status
     - field.field.node.training.field_trainer
     - field.field.node.training.field_training_type
     - node.type.training
@@ -37,7 +39,9 @@ hidden:
   field_date_achieved: true
   field_documents: true
   field_location: true
+  field_remarks: true
   field_remote_url: true
+  field_status: true
   field_trainer: true
   field_training_type: true
   langcode: true
