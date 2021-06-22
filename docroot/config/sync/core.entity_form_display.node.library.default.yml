@@ -4,9 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.library.body
+    - field.field.node.library.field_date
+    - field.field.node.library.field_library_type
     - field.field.node.library.field_trainer
+    - field.field.node.library.field_upload_file
     - node.type.library
   module:
+    - datetime
+    - file
     - path
     - text
 id: node.library.default
@@ -30,6 +35,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_date:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_library_type:
+    weight: 125
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_trainer:
     weight: 122
     settings:
@@ -39,6 +56,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_upload_file:
+    weight: 123
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   langcode:
     type: language_select

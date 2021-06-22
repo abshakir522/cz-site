@@ -5,7 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.library.body
+    - field.field.node.library.field_date
+    - field.field.node.library.field_library_type
     - field.field.node.library.field_trainer
+    - field.field.node.library.field_upload_file
     - node.type.library
   module:
     - text
@@ -29,5 +32,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_date: true
+  field_library_type: true
   field_trainer: true
+  field_upload_file: true
   langcode: true
