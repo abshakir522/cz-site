@@ -55,7 +55,6 @@ div#training-page em {
 .training-page-section-title h2 {
     color: white;
     font-size: 2.6vw;
-    font-family: system-ui;
 	  padding: 13% 0% 1.1% 4%;
 }
 .training-page-section-button{
@@ -67,7 +66,6 @@ div#training-page em {
 .training-page-section-button p {
    padding: 60% 0% 0% 8%;
     color: white;
-    font-family: system-ui;
     font-size: 1.2vw;
     font-weight: 500;
 }
@@ -92,17 +90,11 @@ div#training-page em {
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44,#d5d5d5),color-stop(0.72,#d5d5d5),color-stop(0.86,#d5d5d5));
 }
 .training-page-section-2-sidebar {
-    width: 30%;
-}
-.training-page-section-2-detail p {
-    font-size: 1.4vw;
-    font-family: system-ui;
-    color: #a65e01;
+    width: 25%;
 }
 
 .training-page-section-2-detail p {
    font-size: 1.3vw;
-    font-family: serif;
     color: #8f806c;
     padding: 2% 0% 0% 5%;
 }
@@ -114,7 +106,6 @@ div#training-page em {
 .training-page-section-2-sidebar-status p {
     padding: 1% 0% 0% 6%;
     font-size: 1vw;
-    font-family: system-ui;
     color: darkgrey;
 	  margin: 0px;
 }
@@ -125,7 +116,6 @@ div#training-page em {
 .training-page-section-2-sidebar-date p {
     padding: 1% 0% 0% 6%;
     font-size: 1vw;
-    font-family: system-ui;
     color: darkgrey;
 	  margin: 0px;
 }
@@ -135,7 +125,6 @@ div#training-page em {
 .training-page-section-2-sidebar-detail p {
     padding: 1% 8% 0% 6%;
     font-size: 1vw;
-    font-family: system-ui;
     color: darkgrey;
 	  margin: 0px;
 }
@@ -147,7 +136,6 @@ div#training-page em {
 .my-forum-topic-section-2-sidebar-Points p {
     padding: 1% 0% 0% 6%;
     font-size: 1vw;
-    font-family: system-ui;
     color: darkgrey;
 	  margin: 0px;
 }
@@ -158,7 +146,6 @@ div#training-page em {
 .my-forum-topic-section-2-sidebar-document p {
     padding: 1% 0% 1% 6%;
     font-size: 1vw;
-    font-family: system-ui;
     color: darkgrey;
 	  margin: 0px;
 }
@@ -176,7 +163,6 @@ div#training-page em {
 .training-page-section-2-sidebar-tags p {
     padding: 1% 8% 4% 6%;
     font-size: 1vw;
-    font-family: system-ui;
     color: darkgrey;
 	  margin: 0px;
 }
@@ -211,7 +197,6 @@ div#training-page em {
 }
 .my-forum-topic-section-title h1 {
     color: white;
-    font-family: sans-serif;
     font-size: 3vw;
 }
 .my-forum-topic-section-button {
@@ -220,6 +205,87 @@ div#training-page em {
 }
 .my-forum-topic-section-button span {
     color: white;
-    font-family: sans-serif;
     font-size: 1.5vw;
 }
+/*** library css ****/
+
+.libraries-page {
+    width: 90%;
+    margin: auto;
+}
+.libraries-page-heading {
+	  display: flex;
+    width: 100%;
+    margin: auto;
+    background: #3197b5;
+    border-radius: 25px;
+	  margin: 0% 0% 1% 0%;
+}
+.libraries-page-heading-info {
+   width: 50%;
+    padding: 6% 0% 3% 3%;
+}
+.libraries-page-heading-info h4 {
+    color: white;
+    font-size: 1.3vw;
+    line-height: 1.6;
+	  font-weight: 600;
+    -webkit-box-decoration-break: clone;
+    padding: 0% 0% 0% 4%;
+    margin: 1% 0%;
+}
+.libraries-page-heading-info p {
+    color: #d0e4f5;
+    font-size: 1.2vw;
+    padding: 0% 0% 0% 4%;
+    margin: 1% 0%;
+}
+
+.libraries-page-heading-pdf{
+	 width: 50%;
+}
+.libraries-page-heading-pdf a img{
+   width: 10%;
+    top: 35%;
+    position: relative;
+    left: 75%;
+    font-size: 4vw;
+    color: #fbd091;
+}
+.libraries-page-section-2 { 
+	  display: flex;
+    width: 90%;
+    margin: auto;
+	  padding: 2% 0% 3% 0%;
+}
+.libraries-page-section-2-detail {
+    width: 75%;
+    max-height: 550px;
+	  padding: 0% 6% 0% 0%;
+	  
+}
+.libraries-page-section-2-detail p {
+   font-size: 1.3vw;
+    color: #8f806c;
+    padding: 2% 0% 0% 5%;
+}
+.libraries-page-section-2-sidebar {
+    width: 25%;
+	  border-left: 1.7px solid #cdc8c8;
+	  margin: 2% 0% 0% 0%;
+}
+.library-page-section-2-sidebar-detail {
+    padding: 10% 0% 1% 10%;
+	  display: flex;
+}
+.library-page-section-2-sidebar-detail p {
+    padding: 1% 8% 0% 6%;
+    font-size: 1vw;
+    color: darkgrey;
+    margin: 0px;
+}
+em {
+    margin: 1% 0% 0% 3%;
+    font-size: 1.1vw;
+}
+/*library-page-section-2-sidebar-detail*/
