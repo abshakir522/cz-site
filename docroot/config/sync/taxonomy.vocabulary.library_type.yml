@@ -1,0 +1,8 @@
+uuid: 5a37bf10-b62e-4240-851e-66428497defc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Library Type'
+vid: library_type
+description: ''
+weight: 0

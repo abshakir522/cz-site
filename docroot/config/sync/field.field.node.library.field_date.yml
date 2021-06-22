@@ -1,0 +1,21 @@
+uuid: 97995aaf-a925-411b-a5a8-d39e8d94ccc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.library
+  module:
+    - datetime
+id: node.library.field_date
+field_name: field_date
+entity_type: node
+bundle: library
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
