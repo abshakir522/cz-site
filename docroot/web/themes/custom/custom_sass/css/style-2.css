@@ -288,4 +288,165 @@ em {
     margin: 1% 0% 0% 3%;
     font-size: 1.1vw;
 }
-/*library-page-section-2-sidebar-detail*/
+
+/* web form css */
+.webform-content {
+	padding: 40px 15px;
+}
+.form-block {
+	width: 100%;
+	max-width: 621px;
+	background-color: #f3f3f3;
+	padding: 40px;
+	margin: 0 auto;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.common-form .form-group {
+	margin-bottom: 20px;
+	/* min-height: 45px; */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.common-form .row {
+	margin: 0 -5px;
+}
+
+.common-form [class^=col-] {
+	padding: 0 5px;
+}
+
+.common-form .form-control {
+	height: 45px;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 15px 20px;
+	color: #000;
+	border: none;
+	background-color: #fff;
+	resize: none;
+	box-shadow: none !important;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+.common-form .icon-field {
+	position: relative;
+	width: 100%;
+}
+
+.common-form .icon-field .form-control {
+	padding-right: 60px;
+}
+
+.common-form .icon-field input[type="file"] {
+	position: absolute;
+	/*left: 0;*/
+	right: 10px;
+	/*top: 0;
+	bottom: 0;*/
+	margin: 0;
+	padding: 0;
+	/*width: 100%;
+	height: 100%;*/
+	width: 25px;
+	height: 25px;
+	appearance: none;
+	opacity: 0;
+	z-index: 99999;
+	cursor: pointer !important;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+}
+
+.common-form .icon-field .icon {
+	position: absolute;
+	right: 10px;
+	top: 40%;
+	cursor: pointer;
+	z-index: 9;
+	width: 25px;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+}
+
+.common-form .form-control::-webkit-input-placeholder { font-size: 14px; color: #000; }
+.common-form .form-control::-moz-placeholder { font-size: 14px; color: #000; }
+.common-form .form-control:-ms-input-placeholder { font-size: 14px; color: #000; }
+.common-form .form-control:-o-placeholder { font-size: 14px; color: #000; }
+
+.common-form textarea.form-control {
+	height: 200px;
+}
+
+.common-form .custom-control-label::before{
+	border-color: #c5c5c5;
+	background-color: #c5c5c5;
+}
+
+.common-form .custom-control-input:checked~.custom-control-label::before{
+	border-color: #ac9670;
+	background-color: #ac9670;
+	box-shadow: none !important;
+}
+
+.common-form .submit-button {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+.common-form .submit-button .btn {
+	box-shadow: none !important;
+	padding: 0;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+	color: #fe411a;
+	background-color: transparent;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.common-form .submit-button .btn:focus {
+	color: #fe411a;
+	background-color: transparent;
+}
+
+.common-form .submit-button .btn:hover,
+.common-form .submit-button .btn:active:focus {
+	color: #000;
+	background-color: transparent;
+}
+.common-form fieldset.form-item-document-upload.form-no-label.form-group {
+    background: white;
+    padding: .5% 0% .5% 4%;
+	  border-radius: 5px;
+}
+.common-form fieldset.form-item-upload-evidence.form-no-label.form-group {
+	 background: white;
+    padding: .5% 0% .5% 4%;
+	 border-radius: 5px;
+}
+.common-form .form-item-document-type {
+    padding: 10% 0% 0% 0%;
+}
