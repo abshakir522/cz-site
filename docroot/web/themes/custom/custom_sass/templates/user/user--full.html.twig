@@ -47,7 +47,7 @@
       </div>
 
       <div class="row">
-        <div class="col-12">
+        <div class="col-md-7">
           <h1 class="title">mijn cv <a href="/form/my-cv" class="upload-link"><img src="/themes/custom/custom_sass/icons/upload-solid.svg" width="30"></a></h1>
           <i class="fa-arrow-up-from-square"></i>  <i class="fa-solid fa-user"></i>
         </div>
@@ -55,6 +55,23 @@
          {{ drupal_view('my_cv', 'block_2' ) }}
           {{ drupal_view('my_cv', 'block_3' ) }}
         
+      </div>
+      <div class="row menu" id="profile-menu">
+        <div class="col-12">
+          <h1 class="title">Mijn ontwikkelplan</h1>
+        </div>
+        <div class="col-md-3 menu-links pl-5">
+          <ul>
+            <li><a href="/my-onboardings">MIJN ONBOARDING</a></li>
+            <li>MIJN GOALS</li>
+            <li>MIJN SPECIALISATIES</li>
+            <li>MIJN TRAININGEN</li>
+            <li>MIJN KENNISKRINGEN</li>
+          </ul>
+        </div>
+        <div class="col-md-3 btn-wrap">
+          
+        </div>
       </div>
   {% endif %}
 </article>
